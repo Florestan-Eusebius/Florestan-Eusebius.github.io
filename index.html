@@ -1,0 +1,138 @@
+<!--Huiping Lin's Website-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/a.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/a.jpg">
+  <link rel="mask-icon" href="/images/a.svg" color="#222">
+    <title>Welcome to Huiping Lin | 林汇平's Homepage</title>
+    <!--fonts and styles-->
+    <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="c">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/base.css" media="screen">
+
+    <!--paper list generation utilities-->
+    <script src="js/author-list.js" type="text/javascript"></script>
+    <script src="js/paper-list.js" type="text/javascript"></script>
+    <script src="js/print-paper.js" type="text/javascript"></script>
+    <script>
+        function toggleAbstract(id) {
+            $("#" + id).slideToggle();
+            return (false);
+        };
+    </script>
+
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $('#infoTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="row">
+            <div class="span10 offset1">
+                <div class="page-header">
+                    <h2>Huiping Lin / Phoenix Rain | <font style="font-family:华文中宋">林汇平</font><br />
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="span2">
+                        <img src="images/lhp5.jpg" width="450px" alt="photo of mine" style="margin-top: 10px;" />
+                    </div>
+                    <div class="span8">
+                        <h4>Education</h4>
+                        <a href="https://eecs.pku.edu.cn" target="_blank">School of Electronics
+                            Engineering and Computer Science</a> (信息科学技术学院)<br />
+                        <a href="https://www.pku.edu.cn" target="_blank">Peking University</a> (北京大学)<br />
+                        <h4>Contacts</h4>
+                        <b>E-mail</b>: phoenixrain@pku.edu.cn<br />
+                        <b>GitHub</b>: <a href="https://github.com/phoenixrain-pku" target="_blank">phoenixrain-pku</a><br />
+                        <b>Blog</b>: Click <a href="http://blog.lhp-pku.top" target="_blank">here</a> to see my blogs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div class="row main-panel">
+            <div class="span10 offset1">
+                <ul id="infoTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#about">About Me</a>
+                    </li>
+                    <li class="">
+                        <a data-toggle="tab" href="#paper">Publications</a>
+                    </li>
+                </ul>
+                <div id="infoTabContent" class="tab-content detail-box">
+                    <!-- About Me -->
+                    <div id="about" class="tab-pane fade in active">
+                        <div class="section-content">
+                            <p>I'm currently an undergraduate student at Peking University, studying in Turing Class(CS).
+                            </p>
+                            <p>
+                                我是一名本科生，现就读于北京大学信息科学技术学院图灵班，专业为计算机科学与技术。
+                            </p>
+                            <p>I'm advised by 
+                                <a href="https://cfcs.pku.edu.cn/people/faculty/xiaoyuan/index.htm"
+                                    target="_blank">Xiao Yuan</a> (袁骁) and <a href="https://cs.pku.edu.cn/info/1082/1382.htm"
+                                    target="_blank">Tong Yang</a> (杨仝).
+                            </p>
+                            <p>I'm interested in Quantum Computing, Networking, Sketches and so on...
+                            </p>
+                            <p>
+                                进入我的<a href="http://blog.lhp-pku.top" target="_blank">博客</a>了解更多。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Papers -->
+                    <div id="paper" class="tab-pane fade">
+                        <div class="section-content">
+                            <h4>My published papers / 论文:</h4>
+                            <ul style="list-style-type: circle;">
+                                <li>Yibo Yan, Cheng Chen, <u>Huiping Lin</u>, Olivier Ruas, Tengjiao Wang, Tong Yang. Priority-Aware Per-flow Measurement using Cuckoo Sketch. <em><strong>IFIP Networking Posters 2020</em></strong>.<a href="papers/CuckooSketch.pdf"
+                                    target="_blank">[pdf]</a>
+                                </li>
+                                <li>Wenjun Li, Tong Yang, Ori Rottenstreich, Xianfeng Li, Gaogang Xie, Hui Li, Balajee Vamanan, Dagang Li, <u>Huiping Lin</u>. Tuple Space Assisted Packet Classification with High Performances on Both Search and Update. <em><strong>JSAC 2020</em></strong>.<a href="papers/jsac2020.pdf"
+                                    target="_blank">[pdf]</a>
+                                </li>
+                            </ul>
+                            
+                            <h4>My published patents / 专利:</h4>
+                            <ul style="list-style-type: circle;">
+                                <li>一种特征网络流的数据识别方法
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="span10 offset1">
+                <div class="section-content"
+                    style="margin-top: 0px; margin-bottom: 40px; border-top: 1px solid #e6e6e6;">
+                    <div style="margin-top: 5px;">
+                        Last updated: January 7th, 2021
+                        <noscript>
+                            Warning: you must have javascript enabled to see paper lists, etc.
+                        </noscript>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
