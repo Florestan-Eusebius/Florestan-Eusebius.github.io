@@ -70,5 +70,201 @@ which ensure the stability for any choice of $\Delta x$ and $\Delta t$.&lt;/p&gt
 </description>
     </item>
     
+    <item>
+      <title>纠缠和统计力学的基础</title>
+      <link>https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/</guid>
+      <description>&lt;!-- &lt;script type=&#34;text/javascript&#34; src=&#34;https://florestan-eusebius.github.io/js/pdf-js/build/pdf.js&#34;&gt;&lt;/script&gt;
+&lt;style&gt;
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+  width: 100%;
+  height: auto;
+}
+#paginator{
+    text-align: center;
+    margin-bottom: 10px;
+}
+&lt;/style&gt;
+
+&lt;div id=&#34;paginator&#34;&gt;
+    &lt;button id=&#34;prev&#34;&gt;Previous&lt;/button&gt;
+    &lt;button id=&#34;next&#34;&gt;Next&lt;/button&gt;
+    &amp;nbsp; &amp;nbsp;
+    &lt;span&gt;Page: &lt;span id=&#34;page_num&#34;&gt;&lt;/span&gt; / &lt;span id=&#34;page_count&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div id=&#34;embed-pdf-container&#34;&gt;
+    &lt;canvas id=&#34;the-canvas&#34;&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+window.onload = function() {
+
+
+
+var url = &#34;https:\/\/florestan-eusebius.github.io\/&#34; + &#34;&#34;;
+
+
+var pdfjsLib = window[&#39;pdfjs-dist/build/pdf&#39;];
+
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = &#34;https:\/\/florestan-eusebius.github.io\/&#34; + &#39;/js/pdf-js/build/pdf.worker.js&#39;;
+
+
+var pdfDoc = null,
+    pageNum = 1,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 3,
+    canvas = document.getElementById(&#39;the-canvas&#39;),
+    ctx = canvas.getContext(&#39;2d&#39;);
+
+
+
+function renderPage(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById(&#39;page_num&#39;).textContent = num;
+}
+
+
+
+function queueRenderPage(num) {
+  if (pageRendering) {
+    pageNumPending = num;
+  } else {
+    renderPage(num);
+  }
+}
+
+
+
+function onPrevPage() {
+  if (pageNum &lt;= 1) {
+    return;
+  }
+  pageNum--;
+  queueRenderPage(pageNum);
+}
+document.getElementById(&#39;prev&#39;).addEventListener(&#39;click&#39;, onPrevPage);
+
+
+
+function onNextPage() {
+  if (pageNum &gt;= pdfDoc.numPages) {
+    return;
+  }
+  pageNum++;
+  queueRenderPage(pageNum);
+}
+document.getElementById(&#39;next&#39;).addEventListener(&#39;click&#39;, onNextPage);
+
+
+
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+  pdfDoc = pdfDoc_;
+  document.getElementById(&#39;page_count&#39;).textContent = pdfDoc.numPages;
+
+  
+  renderPage(pageNum);
+});
+}
+
+&lt;/script&gt; --&gt;
+&lt;embed src=&#34;content.pdf&#34; width=&#34;100%&#34; height=&#34;850&#34; type=&#39;application/pdf&#39;&gt;</description>
+    </item>
+    
+    <item>
+      <title>EPR到底说了些什么？</title>
+      <link>https://florestan-eusebius.github.io/post/epr%E5%88%B0%E5%BA%95%E8%AF%B4%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://florestan-eusebius.github.io/post/epr%E5%88%B0%E5%BA%95%E8%AF%B4%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/</guid>
+      <description>&lt;p&gt;Einstein, Podolsky, Rosen三人的论文&lt;em&gt;Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?&lt;/em&gt; (对物理实在的量子力学描述是完备的吗?) 是量子力学发展史上的一篇重要文献. 这篇论文从科学哲学的角度对量子力学的完备性提出了质疑, 引发了旷日持久的争论, 这些争论促成了诸多重要概念的提出和发展, 这些概念则建构了量子信息科学的理论基础. 因此, 直到今天, 这篇论文对于试图了解量子信息乃至从事相关研究的人, 仍然是绕不开的经典.&lt;/p&gt;
+&lt;p&gt;EPR的论文乍看来似乎曲折回环, 但其论证思路实际上非常清晰, 本文将先梳理原文的论证思路, 再联系后续的发展简要谈谈笔者的理解.&lt;/p&gt;
+&lt;h2 id=&#34;epr论文的论证思路&#34;&gt;EPR论文的论证思路&lt;/h2&gt;
+&lt;p&gt;文章主要围绕两个命题A, B展开并分为两部分. 第一部分论述了命题A或B为真, 即A, B必有一个是真命题; 第二部分论述了如果A是假命题, 那么B也一定是假命题, 并由此导出A是真命题. 两个命题的具体内容如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;命题A: 量子力学对物理实在的描述是不完备的.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;命题B: 两个不对易的算符不可能同时对应物理实在.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;先对两个命题中涉及的概念作出说明. 这里的&amp;quot;完备&amp;quot;, 是对一套物理理论而言的, 是指每一个物理实在在理论中都能找到对应, 并不存在理论所不能描述的物理实在. 要注意这并不是算符的本征态构成希尔伯特空间完备基这种意义上的完备. 在&amp;quot;完备&amp;quot;的定义和命题B中, 我们都提到了&amp;quot;物理实在&amp;quot;这一概念, 论文中并未给出这一概念的确切定义, 而只给出了一个物理实在存在的充分条件: 对于一个物理系统, 如果我们可以在不扰动这个系统的前提下确切地预测一个物理量的值, 那么就存在一个物理实在和这个物理量相对应.&lt;/p&gt;
+&lt;p&gt;有了上述概念上的准备, EPR三人在第一部分考察了不可对易的两个可观测量, 例如位置和动量, 按照不确定原理, 这两个可观测量在同一量子态上不会同时具有确定的值. 如果这两个物理量同时对应物理实在(即命题B不成立), 那么一个完备的物理理论应该能够同时描述它们. 需要强调的是, 这里的&amp;quot;同时描述&amp;quot;并不要求两个物理量可以在同一个瞬间一起测量, 而只是要求对于系统的同一个物理状态, 它们都有确定的值. 显然量子力学由于不确定原理的存在, 连后者都不能做到.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 因此, 若B不成立, 则A成立, 推出A或B至少有一个是成立的.&lt;/p&gt;
+&lt;p&gt;在文章的第二部分, 作者先假设量子力学是完备的. 此时考虑两个系统的纠缠态, 测量第一个系统的某个物理量, 第二个系统的一个物理量的值也随之确定; 再测量第一个系统的另一个物理量, 第二个系统又有一个物理量随之确定. 作为一个例子, 作者考虑了一个简单的二粒子态:&lt;/p&gt;
+&lt;p&gt;$$
+\Psi(x_1,x_2)=\int_{-\infty}^\infty e^{\frac{2\pi i}{h}(x_1-x_2+x_0)p}dp,
+$$&lt;/p&gt;
+&lt;p&gt;测量第一个粒子的动量, 第二个粒子的动量也随之确定; 测量第一个粒子的位置, 第二个粒子的位置也随之确定. 作者认为, 既然此时两个粒子已经没有了相互作用, 测量第一个粒子就不可能对第二个粒子产生实质性的影响, 因此, &lt;strong&gt;虽然第二个粒子在上述两个测量过程中波函数是不相同的, 却只能处在同一个真实的物理状态.&lt;/strong&gt; 此时, 对于这样一个物理状态, 它的位置和动量都可以被不加扰动地确切预测, 因此它们都对应物理实在.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; 这样就由非A推导出了非B. 因此, 结合A或B为真, 我们只能得出A为真, 即量子力学不能提供对物理实在完备的描述.&lt;/p&gt;
+&lt;h2 id=&#34;定域实在论与量子力学的矛盾&#34;&gt;&amp;ldquo;定域实在论&amp;quot;与量子力学的矛盾&lt;/h2&gt;
+&lt;p&gt;尽管爱因斯坦的本意是指出量子力学的不完备性, 但后人却将EPR的意义解读为定域实在论和量子力学的矛盾. 关于&amp;quot;实在&amp;rdquo;, 前面已经介绍了很多, 下面我们讨论&amp;quot;定域&amp;quot;的概念.&lt;/p&gt;
+&lt;p&gt;在EPR的第二部分论述中, 实际上引入了一个关键的前提: 对第一个粒子的测量并不实质影响第二个粒子的物理状态(即上文加粗部分). 原论文中轻描淡写地说: &amp;ldquo;这仅仅是它们没有相互作用的一种表述.&amp;rdquo; 但后来的物理学家普遍认为第二个粒子的状态实际上被改变了.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; 因此, 第二个粒子状态不被改变这种观点, 其实是一个很重要的预设, 我们称其为&amp;quot;定域&amp;quot;假设, 记为命题C.&lt;/p&gt;
+&lt;p&gt;另外, 作者在第二部分的论述中并没有明显地使用量子力学完备这一前提, 而仅仅假设了量子力学正确, 由此出发和定域假设一起推出了B不成立. 再考虑到整篇文章并没有否认量子力学的意思, 可以认为文章的一个大前提就是量子力学是成立的, 因此我们重新整理文章的论证思路如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;前提: (1)量子力学正确; (2)命题C, 即定域假设.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;论证的第一部分: 命题A或B成立.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;论证的第二部分: 由两个前提推出命题B不成立.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;结论: 命题A成立.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;略去中间的推理, 我们概括文章的结论为: 在满足定域性的前提下, 量子力学不可能是具有实在完备性的理论. 或者, 可以等价地表述为: 量子力学不可能同时具有定域性和对物理实在的完备性. 概括的说法即为: 量子力学与定域实在论是不相容的.&lt;/p&gt;
+&lt;h2 id=&#34;对定域假设的突破&#34;&gt;对定域假设的突破&lt;/h2&gt;
+&lt;p&gt;EPR的论文从定域性出发, 论证了量子力学的不完备. 但是如果我们破坏论证的第二部分, 即放弃定域假设, 那么我们就无法否定命题B, 量子力学就有可能还是一个完备的理论.&lt;/p&gt;
+&lt;p&gt;贝尔在1964年发表了一篇重要的文章, &lt;em&gt;On the Einstein-Podolsky-Rosen Paradox&lt;/em&gt; (论EPR悖论). 这篇文章非常优美, 六个小标题分别为Introduction, Formulation, Illustration, Contradiction, Generalization, Conclusion, 物理论文写出了韵律, 可谓别出心裁. 文章的核心在于, 考虑两个纠缠的电子, 同时分别测量两个粒子不同方向上的自旋, 可以根据量子力学计算出两个测量结果乘积的期待值. 贝尔证明了, 诚如EPR所说, 量子力学不完备, 存在其他我们不知道的物理量(称为&amp;quot;隐变量&amp;quot;)影响着测量结果, 并且如果我们要求这种隐变量理论中对一个粒子的测量不会立刻影响另一个粒子的测量机制, 那么它给出的上述测量结果乘积的期待值就必须满足贝尔不等式. 但是量子力学给出的期待值是不满足贝尔不等式的. 因此, 为了给出和量子力学的预测相同的期待值, 只能在这种隐变量理论中引入超光速的机制.&lt;/p&gt;
+&lt;p&gt;需要注意, 这里我们已经承认了对于纠缠的两个粒子, 测量其中一个会立刻改变另一个的量子态, 用不同的方式测量一个粒子, 另一个粒子的物理状态的确可能不同. 这种奇异的现象人称&amp;quot;鬼魅般的超距作用&amp;quot;, 但后续研究表明, 这种所谓的&amp;quot;超距作用&amp;quot;并不能用来传递信息, 也不能传递物质或能量, 因此, 它虽然看起来像是超距作用, 但实际上并不违反相对论. 而在隐变量理论中, 测量一个粒子瞬间了影响另一个粒子的测量机制, 出现了超光速并且关乎物理实在的作用. 相比于量子纠缠理论中没有实质信息传递的非定域, 这种非定域使得理论与相对论直接冲突, 显然更不可接受.&lt;/p&gt;
+&lt;p&gt;至此, 摆在我们面前的只有两种可能: 要么量子力学是正确的, 纠缠确实会产生非定域的影响, 因此纠缠态并不能用来否定量子力学的完备性; 要么量子力学是不完备的, 我们需要用额外的变量来描述物理体系, 由于我们不能引入实质的超光速机制, 这种描述必然进一步意味着量子力学是错误的. 孰是孰非, 贝尔已经指出了验证的道路. 既然不违反相对论的隐变量理论必须服从贝尔不等式, 如果实验结果违反了这个不等式, 那么局域隐变量理论就只能被抛弃, 量子力学暂时获得了安全; 反之, 如果无数次实验结果都满足这个不等式, 理论物理学家就会迎来新一轮的狂欢(如果量子力学错了, 有多少物理需要重建, 想想就激动). 于是, 一个个越来越精巧, 越来越严密的贝尔实验, 便轰轰烈烈地开展了起来.&lt;/p&gt;
+&lt;p&gt;幸运, 或许也是不幸, 目前看来, 量子力学还是安全的.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;熟悉不确定原理的推导就应该知道, 不确定原理关心的是同一个态, 而非同一时间. 由于前者蕴含后者, 很多人受此迷惑并不能深刻地认识到这一点. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;注意上一段提到的&amp;quot;同时&amp;quot;的确切含义, 这里第一个粒子的位置和动量也不能在同一瞬间一并测量, 但由于测量之后第二个粒子并无实质变化(这一点我们后文会继续展开), 因此对应的是第二个粒子的同一个物理状态. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;我们现在将这种改变称为导引. 关于纠缠, 导引和非定域三个概念更加细致的差别, 本文暂不做讨论. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
