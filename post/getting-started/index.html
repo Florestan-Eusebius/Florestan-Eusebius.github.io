@@ -33,7 +33,7 @@
   
     
   
-  <meta name="description" content="Welcome 👋 We know that first impressions are important, so we&#39;ve populated your new site with some initial content to help you get familiar with everything in no time." />
+  <meta name="description" content="A stable numerical method for 1D time-dependent Schrödinger Equation." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://florestan-eusebius.github.io/post/getting-started/" />
@@ -63,6 +63,9 @@
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -222,9 +225,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -294,23 +297,24 @@
   
   
     
+    
   
   
-  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Wang Yifei" />
   <meta property="og:url" content="https://florestan-eusebius.github.io/post/getting-started/" />
-  <meta property="og:title" content="Welcome to Wowchemy, the website builder for Hugo | Wang Yifei" />
-  <meta property="og:description" content="Welcome 👋 We know that first impressions are important, so we&#39;ve populated your new site with some initial content to help you get familiar with everything in no time." /><meta property="og:image" content="https://florestan-eusebius.github.io/post/getting-started/featured.jpg" />
-    <meta property="twitter:image" content="https://florestan-eusebius.github.io/post/getting-started/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:title" content="Crank-Nicolson Method for Solving 1D Schrödinger Equation | Wang Yifei" />
+  <meta property="og:description" content="A stable numerical method for 1D time-dependent Schrödinger Equation." /><meta property="og:image" content="https://florestan-eusebius.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://florestan-eusebius.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2020-12-13T00:00:00&#43;00:00"
+        content="2021-02-23T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2020-12-13T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-02-23T00:00:00&#43;00:00">
   
 
   
@@ -336,14 +340,10 @@
     "@type": "WebPage",
     "@id": "https://florestan-eusebius.github.io/post/getting-started/"
   },
-  "headline": "Welcome to Wowchemy, the website builder for Hugo",
+  "headline": "Crank-Nicolson Method for Solving 1D Schrödinger Equation",
   
-  "image": [
-    "https://florestan-eusebius.github.io/post/getting-started/featured.jpg"
-  ],
-  
-  "datePublished": "2020-12-13T00:00:00Z",
-  "dateModified": "2020-12-13T00:00:00Z",
+  "datePublished": "2021-02-23T00:00:00Z",
+  "dateModified": "2021-02-23T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -358,7 +358,7 @@
       "url": "https://florestan-eusebius.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Welcome 👋 We know that first impressions are important, so we've populated your new site with some initial content to help you get familiar with everything in no time."
+  "description": "A stable numerical method for 1D time-dependent Schrödinger Equation."
 }
 </script>
 
@@ -374,7 +374,7 @@
 
 
 
-  <title>Welcome to Wowchemy, the website builder for Hugo | Wang Yifei</title>
+  <title>Crank-Nicolson Method for Solving 1D Schrödinger Equation | Wang Yifei</title>
 </head>
 
 
@@ -581,117 +581,6 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#talks"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/#contact"><span>Contact</span></a>
         </li>
 
@@ -764,28 +653,20 @@
 
 
 
-
-
-
-
-
-
-
+  
 
   
+  
+  
+<div class="article-container pt-3">
+  <h1>Crank-Nicolson Method for Solving 1D Schrödinger Equation</h1>
+
+  
+  <p class="page-subtitle">A stable numerical method for 1D time-dependent Schrödinger Equation.</p>
+  
+
   
     
-  
-
-
-<div class="article-container pt-3">
-  <h1>Welcome to Wowchemy, the website builder for Hugo</h1>
-
-  
-  <p class="page-subtitle">Welcome 👋 We know that first impressions are important, so we&rsquo;ve populated your new site with some initial content to help you get familiar with everything in no time.</p>
-  
-
-  
 
 
 <div class="article-metadata">
@@ -798,8 +679,7 @@
     
 
   <span >
-      Wang Yifei</span>, <span >
-      吳恩達</span>
+      Wang Yifei</span>
   </div>
   
   
@@ -810,7 +690,7 @@
     
       
     
-    Dec 13, 2020
+    Feb 23, 2021
   </span>
   
 
@@ -834,25 +714,18 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/demo/">Demo</a>, <a href="/category/%E6%95%99%E7%A8%8B/">教程</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/category/academic/">Academic</a>, <a href="/category/physics/">Physics</a></span>
   
 
 </div>
 
+    
+
+
+
+
+
   
-
-
-
-
-
-</div>
-
-
-<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 1200px; max-height: 675px;">
-  <div style="position: relative">
-    <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_1200x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
-    <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/CpkOjOcXdUY"><strong>Unsplash</strong></a></span>
-  </div>
 </div>
 
 
@@ -860,49 +733,56 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h2 id="get-started">Get Started</h2>
-<ul>
-<li>👉 <a href="https://wowchemy.com/templates/" target="_blank" rel="noopener"><strong>Create a new site</strong></a></li>
-<li>📚 <a href="https://wowchemy.com/docs/" target="_blank" rel="noopener"><strong>Personalize your site</strong></a></li>
-<li>💬 <a href="https://discord.gg/z8wNYzb" target="_blank" rel="noopener">Chat with the <strong>Wowchemy community</strong></a> or <a href="https://discourse.gohugo.io" target="_blank" rel="noopener"><strong>Hugo community</strong></a></li>
-<li>🐦 Twitter: <a href="https://twitter.com/wowchemy" target="_blank" rel="noopener">@wowchemy</a> <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">@GeorgeCushen</a> <a href="https://twitter.com/search?q=%28%23MadeWithWowchemy%20OR%20%23MadeWithAcademic%29&amp;src=typed_query" target="_blank" rel="noopener">#MadeWithWowchemy</a></li>
-<li>💡 <a href="https://github.com/wowchemy/wowchemy-hugo-modules/issues" target="_blank" rel="noopener">Request a <strong>feature</strong> or report a <strong>bug</strong> for <em>Wowchemy</em></a></li>
-<li>⬆️ <strong>Updating Wowchemy?</strong> View the <a href="https://wowchemy.com/docs/guide/update/" target="_blank" rel="noopener">Update Guide</a> and <a href="https://wowchemy.com/updates/" target="_blank" rel="noopener">Release Notes</a></li>
-</ul>
-<h2 id="crowd-funded-open-source-software">Crowd-funded open-source software</h2>
-<p>To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.</p>
-<h3 id="-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomplans"><a href="https://wowchemy.com/plans/" target="_blank" rel="noopener">❤️ Click here to become a sponsor and help support Wowchemy&rsquo;s future ❤️</a></h3>
-<p>As a token of appreciation for sponsoring, you can <strong>unlock <a href="https://wowchemy.com/plans/" target="_blank" rel="noopener">these</a> awesome rewards and extra features 🦄✨</strong></p>
-<h2 id="ecosystem">Ecosystem</h2>
-<ul>
-<li><strong><a href="https://github.com/wowchemy/hugo-academic-cli" target="_blank" rel="noopener">Hugo Academic CLI</a>:</strong> Automatically import publications from BibTeX</li>
-</ul>
-<h2 id="inspiration">Inspiration</h2>
-<p><a href="https://academic-demo.netlify.com/" target="_blank" rel="noopener">Check out the latest <strong>demo</strong></a> of what you&rsquo;ll get in less than 10 minutes, or <a href="https://wowchemy.com/user-stories/" target="_blank" rel="noopener">view the <strong>showcase</strong></a> of personal, project, and business sites.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li><strong>Page builder</strong> - Create <em>anything</em> with <a href="https://wowchemy.com/docs/page-builder/" target="_blank" rel="noopener"><strong>widgets</strong></a> and <a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener"><strong>elements</strong></a></li>
-<li><strong>Edit any type of content</strong> - Blog posts, publications, talks, slides, projects, and more!</li>
-<li><strong>Create content</strong> in <a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener"><strong>Markdown</strong></a>, <a href="https://wowchemy.com/docs/import/jupyter/" target="_blank" rel="noopener"><strong>Jupyter</strong></a>, or <a href="https://wowchemy.com/docs/install-locally/" target="_blank" rel="noopener"><strong>RStudio</strong></a></li>
-<li><strong>Plugin System</strong> - Fully customizable <a href="https://wowchemy.com/docs/customization/" target="_blank" rel="noopener"><strong>color</strong> and <strong>font themes</strong></a></li>
-<li><strong>Display Code and Math</strong> - Code highlighting and <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank" rel="noopener">LaTeX math</a> supported</li>
-<li><strong>Integrations</strong> - <a href="https://analytics.google.com" target="_blank" rel="noopener">Google Analytics</a>, <a href="https://disqus.com" target="_blank" rel="noopener">Disqus commenting</a>, Maps, Contact Forms, and more!</li>
-<li><strong>Beautiful Site</strong> - Simple and refreshing one page design</li>
-<li><strong>Industry-Leading SEO</strong> - Help get your website found on search engines and social media</li>
-<li><strong>Media Galleries</strong> - Display your images and videos with captions in a customizable gallery</li>
-<li><strong>Mobile Friendly</strong> - Look amazing on every screen with a mobile friendly version of your site</li>
-<li><strong>Multi-language</strong> - 34+ language packs including English, 中文, and Português</li>
-<li><strong>Multi-user</strong> - Each author gets their own profile page</li>
-<li><strong>Privacy Pack</strong> - Assists with GDPR</li>
-<li><strong>Stand Out</strong> - Bring your site to life with animation, parallax backgrounds, and scroll effects</li>
-<li><strong>One-Click Deployment</strong> - No servers. No databases. Only files.</li>
-</ul>
-<h2 id="themes">Themes</h2>
-<p>Wowchemy and its templates come with <strong>automatic day (light) and night (dark) mode</strong> built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the <a href="https://academic-demo.netlify.com/" target="_blank" rel="noopener">Demo</a> to see it in action! Day/night mode can also be disabled by the site admin in <code>params.toml</code>.</p>
-<p><a href="https://wowchemy.com/docs/customization" target="_blank" rel="noopener">Choose a stunning <strong>theme</strong> and <strong>font</strong></a> for your site. Themes are fully customizable.</p>
-<h2 id="license">License</h2>
-<p>Copyright 2016-present <a href="https://georgecushen.com" target="_blank" rel="noopener">George Cushen</a>.</p>
-<p>Released under the <a href="https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT</a> license.</p>
+      <p>To solve a one-dimensional time-dependent Schrödinger equation numerically, consider a difference method.</p>
+<p>The equation to be solved is
+$$
+\mathrm{i}\hbar\frac{\partial \psi(x, t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^{2} \psi(x, t)}{\partial x^{2}}+V(x, t) \psi(x, t).
+$$
+Discretise the $x$, and denote $x_j=j\Delta x,\ j=1,\cdots,L$ and $\psi(x_j)=\psi_j$ To perform the difference, define the discretised Hamiltonian $H_D$ as
+$$
+H_D\psi_j=-\frac{\hbar^2}{2m}\frac{1}{\Delta x^2}\left[\psi_{j-1}+\psi_{j+1}-2\psi_j\right]+V_j\psi_j,
+$$
+which can be viewed as a matrix performed on a vector $(\psi_1,\cdots,\psi_L)$. Discretise the time and denote $\psi(t_n)=\psi(n\Delta t)=\psi^n$. A trivial differential method is
+$$
+\mathrm{i}\hbar\frac{1}{\Delta t}(\psi^n_{j+1}-\psi^n_j)=H_D\psi^n_j,
+$$
+i.e.,
+$$
+\psi^{n+1}_j=\left(1-\mathrm{i}\Delta t H_D/\hbar\right)\psi^n_j.
+$$
+To check the stability of such a method, consider the analytical solution to the discretised equation for $V_j$ constant
+$$
+\psi^n_j=\xi^n\exp(\mathrm{i}kj\Delta x),
+$$
+which yields
+$$
+\xi=1-\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right].
+$$
+For any $\Delta x$ and $\Delta t$, $|\xi|&gt;1$, indicating that this method is always unstable.</p>
+<p>A modification of this method is to replace the discretisation form by</p>
+<p>$$
+\psi^{n+1}_j=\psi^n_j-\mathrm{i}\Delta t H_D/\hbar\psi^{n+1}_j,
+$$</p>
+<p>i.e.,</p>
+<p>$$
+\psi_{j}^{n+1}=\sum_{j'}\left(1+\mathrm{i} \Delta t H_D/\hbar\right)_{jj'}^{-1} \psi_{j'}^{n}
+$$</p>
+<p>One can check that in this method
+$$
+\xi=\frac{1}{1+\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]},
+$$
+which indicates that this method is always stable. However, the time evolution $\left(1+\mathrm{i} \Delta t H_D/\hbar\right)^{-1}$ is still not unitary, so that it does not preserve the norm of the wave function.</p>
+<p>A further modification is to set the time evolution as
+$$
+\frac{1-\mathrm{i}\Delta tH_D/2\hbar}{1+\mathrm{i}\Delta t H_D/2\hbar}.
+$$
+To evaluate the stability,
+$$
+\xi=\frac{1-\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]}{1+\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]},
+$$
+which ensure the stability for any choice of $\Delta x$ and $\Delta t$.</p>
+<p>The third method is called Crank-Nicolson method. It is an implicit form and requires an inverse of a tridiagonal matrix, whose time cost is $\mathcal{O}(L)$. To calculate the time evolution, one need to perform matrix products, whose time cost is $\mathcal{O}(L^2)$.</p>
+<p>The code for this method with a periodic boundary condition can be found at <a href="https://github.com/Florestan-Eusebius/Crank-Nicolson-Solver" target="_blank" rel="noopener">Florestan-Eusebius/Crank-Nicolson-Solver: The Crank Nicolson Solver to solve 1D time dependent Schrödinger equation. (github.com)</a>, where the harmonic oscillator is tested as an example. We see that result calculated by this method agrees with the theoretical result perfectly.</p>
 
     </div>
 
@@ -915,9 +795,9 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/academic/">Academic</a>
+  <a class="badge badge-light" href="/tag/numerical-method/">Numerical Method</a>
   
-  <a class="badge badge-light" href="/tag/%E5%BC%80%E6%BA%90/">开源</a>
+  <a class="badge badge-light" href="/tag/differential-equation/">Differential Equation</a>
   
 </div>
 
@@ -934,7 +814,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://florestan-eusebius.github.io/post/getting-started/&amp;text=Welcome%20to%20Wowchemy,%20the%20website%20builder%20for%20Hugo" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://florestan-eusebius.github.io/post/getting-started/&amp;text=Crank-Nicolson%20Method%20for%20Solving%201D%20Schr%c3%b6dinger%20Equation" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -947,7 +827,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://florestan-eusebius.github.io/post/getting-started/&amp;t=Welcome%20to%20Wowchemy,%20the%20website%20builder%20for%20Hugo" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://florestan-eusebius.github.io/post/getting-started/&amp;t=Crank-Nicolson%20Method%20for%20Solving%201D%20Schr%c3%b6dinger%20Equation" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -960,7 +840,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Welcome%20to%20Wowchemy,%20the%20website%20builder%20for%20Hugo&amp;body=https://florestan-eusebius.github.io/post/getting-started/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Crank-Nicolson%20Method%20for%20Solving%201D%20Schr%c3%b6dinger%20Equation&amp;body=https://florestan-eusebius.github.io/post/getting-started/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -973,7 +853,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://florestan-eusebius.github.io/post/getting-started/&amp;title=Welcome%20to%20Wowchemy,%20the%20website%20builder%20for%20Hugo" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://florestan-eusebius.github.io/post/getting-started/&amp;title=Crank-Nicolson%20Method%20for%20Solving%201D%20Schr%c3%b6dinger%20Equation" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -986,7 +866,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Welcome%20to%20Wowchemy,%20the%20website%20builder%20for%20Hugo%20https://florestan-eusebius.github.io/post/getting-started/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Crank-Nicolson%20Method%20for%20Solving%201D%20Schr%c3%b6dinger%20Equation%20https://florestan-eusebius.github.io/post/getting-started/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -999,7 +879,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://florestan-eusebius.github.io/post/getting-started/&amp;title=Welcome%20to%20Wowchemy,%20the%20website%20builder%20for%20Hugo" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://florestan-eusebius.github.io/post/getting-started/&amp;title=Crank-Nicolson%20Method%20for%20Solving%201D%20Schr%c3%b6dinger%20Equation" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1080,12 +960,6 @@
 
     </div>
   </div>
-
-
-  
-    
-
-
 
 
   

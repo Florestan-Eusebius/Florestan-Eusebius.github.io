@@ -33,53 +33,60 @@
     </item>
     
     <item>
-      <title>Welcome to Wowchemy, the website builder for Hugo</title>
+      <title>Crank-Nicolson Method for Solving 1D Schrödinger Equation</title>
       <link>https://florestan-eusebius.github.io/post/getting-started/</link>
-      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://florestan-eusebius.github.io/post/getting-started/</guid>
-      <description>&lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;👉 &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;a href=&#34;https://wowchemy.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;Wowchemy community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/wowchemy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@wowchemy&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%28%23MadeWithWowchemy%20OR%20%23MadeWithAcademic%29&amp;amp;src=typed_query&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithWowchemy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Wowchemy&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating Wowchemy?&lt;/strong&gt; View the &lt;a href=&#34;https://wowchemy.com/docs/guide/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
-&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
-&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomplans&#34;&gt;&lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/wowchemy/hugo-academic-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CLI&lt;/a&gt;:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://wowchemy.com/user-stories/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://wowchemy.com/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://wowchemy.com/docs/import/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://wowchemy.com/docs/install-locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://wowchemy.com/docs/customization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 34+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Wowchemy and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/customization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+      <description>&lt;p&gt;To solve a one-dimensional time-dependent Schrödinger equation numerically, consider a difference method.&lt;/p&gt;
+&lt;p&gt;The equation to be solved is
+$$
+\mathrm{i}\hbar\frac{\partial \psi(x, t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^{2} \psi(x, t)}{\partial x^{2}}+V(x, t) \psi(x, t).
+$$
+Discretise the $x$, and denote $x_j=j\Delta x,\ j=1,\cdots,L$ and $\psi(x_j)=\psi_j$ To perform the difference, define the discretised Hamiltonian $H_D$ as
+$$
+H_D\psi_j=-\frac{\hbar^2}{2m}\frac{1}{\Delta x^2}\left[\psi_{j-1}+\psi_{j+1}-2\psi_j\right]+V_j\psi_j,
+$$
+which can be viewed as a matrix performed on a vector $(\psi_1,\cdots,\psi_L)$. Discretise the time and denote $\psi(t_n)=\psi(n\Delta t)=\psi^n$. A trivial differential method is
+$$
+\mathrm{i}\hbar\frac{1}{\Delta t}(\psi^n_{j+1}-\psi^n_j)=H_D\psi^n_j,
+$$
+i.e.,
+$$
+\psi^{n+1}_j=\left(1-\mathrm{i}\Delta t H_D/\hbar\right)\psi^n_j.
+$$
+To check the stability of such a method, consider the analytical solution to the discretised equation for $V_j$ constant
+$$
+\psi^n_j=\xi^n\exp(\mathrm{i}kj\Delta x),
+$$
+which yields
+$$
+\xi=1-\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right].
+$$
+For any $\Delta x$ and $\Delta t$, $|\xi|&amp;gt;1$, indicating that this method is always unstable.&lt;/p&gt;
+&lt;p&gt;A modification of this method is to replace the discretisation form by&lt;/p&gt;
+&lt;p&gt;$$
+\psi^{n+1}_j=\psi^n_j-\mathrm{i}\Delta t H_D/\hbar\psi^{n+1}_j,
+$$&lt;/p&gt;
+&lt;p&gt;i.e.,&lt;/p&gt;
+&lt;p&gt;$$
+\psi_{j}^{n+1}=\sum_{j&#39;}\left(1+\mathrm{i} \Delta t H_D/\hbar\right)_{jj&#39;}^{-1} \psi_{j&#39;}^{n}
+$$&lt;/p&gt;
+&lt;p&gt;One can check that in this method
+$$
+\xi=\frac{1}{1+\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]},
+$$
+which indicates that this method is always stable. However, the time evolution $\left(1+\mathrm{i} \Delta t H_D/\hbar\right)^{-1}$ is still not unitary, so that it does not preserve the norm of the wave function.&lt;/p&gt;
+&lt;p&gt;A further modification is to set the time evolution as
+$$
+\frac{1-\mathrm{i}\Delta tH_D/2\hbar}{1+\mathrm{i}\Delta t H_D/2\hbar}.
+$$
+To evaluate the stability,
+$$
+\xi=\frac{1-\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]}{1+\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]},
+$$
+which ensure the stability for any choice of $\Delta x$ and $\Delta t$.&lt;/p&gt;
+&lt;p&gt;The third method is called Crank-Nicolson method. It is an implicit form and requires an inverse of a tridiagonal matrix, whose time cost is $\mathcal{O}(L)$. To calculate the time evolution, one need to perform matrix products, whose time cost is $\mathcal{O}(L^2)$.&lt;/p&gt;
+&lt;p&gt;The code for this method with a periodic boundary condition can be found at &lt;a href=&#34;https://github.com/Florestan-Eusebius/Crank-Nicolson-Solver&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Florestan-Eusebius/Crank-Nicolson-Solver: The Crank Nicolson Solver to solve 1D time dependent Schrödinger equation. (github.com)&lt;/a&gt;, where the harmonic oscillator is tested as an example. We see that result calculated by this method agrees with the theoretical result perfectly.&lt;/p&gt;
 </description>
     </item>
     

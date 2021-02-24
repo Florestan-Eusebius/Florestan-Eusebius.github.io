@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | Wang Yifei</title>
-    <link>https://florestan-eusebius.github.io/post/</link>
-      <atom:link href="https://florestan-eusebius.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>Posts</description>
+    <title>Physics | Wang Yifei</title>
+    <link>https://florestan-eusebius.github.io/category/physics/</link>
+      <atom:link href="https://florestan-eusebius.github.io/category/physics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Physics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://florestan-eusebius.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Posts</title>
-      <link>https://florestan-eusebius.github.io/post/</link>
+      <title>Physics</title>
+      <link>https://florestan-eusebius.github.io/category/physics/</link>
     </image>
     
     <item>
