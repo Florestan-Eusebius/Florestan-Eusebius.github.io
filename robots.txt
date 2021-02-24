@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: sitemap.xml
+Sitemap: https://florestan-eusebius.github.io/sitemap.xml
