@@ -95,7 +95,129 @@ which ensure the stability for any choice of $\Delta x$ and $\Delta t$.&lt;/p&gt
       <link>https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/</guid>
-      <description>&lt;embed src=&#34;content.pdf&#34; width=&#34;100%&#34; height=&#34;500px&#34; type=&#39;application/pdf&#39;&gt;</description>
+      <description>&lt;!-- &lt;script type=&#34;text/javascript&#34; src=&#34;https://florestan-eusebius.github.io/js/pdf-js/build/pdf.js&#34;&gt;&lt;/script&gt;
+&lt;style&gt;
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+  width: 100%;
+  height: auto;
+}
+#paginator{
+    text-align: center;
+    margin-bottom: 10px;
+}
+&lt;/style&gt;
+
+&lt;div id=&#34;paginator&#34;&gt;
+    &lt;button id=&#34;prev&#34;&gt;Previous&lt;/button&gt;
+    &lt;button id=&#34;next&#34;&gt;Next&lt;/button&gt;
+    &amp;nbsp; &amp;nbsp;
+    &lt;span&gt;Page: &lt;span id=&#34;page_num&#34;&gt;&lt;/span&gt; / &lt;span id=&#34;page_count&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div id=&#34;embed-pdf-container&#34;&gt;
+    &lt;canvas id=&#34;the-canvas&#34;&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+window.onload = function() {
+
+
+
+var url = &#34;https:\/\/florestan-eusebius.github.io\/&#34; + &#34;&#34;;
+
+
+var pdfjsLib = window[&#39;pdfjs-dist/build/pdf&#39;];
+
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = &#34;https:\/\/florestan-eusebius.github.io\/&#34; + &#39;/js/pdf-js/build/pdf.worker.js&#39;;
+
+
+var pdfDoc = null,
+    pageNum = 1,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 3,
+    canvas = document.getElementById(&#39;the-canvas&#39;),
+    ctx = canvas.getContext(&#39;2d&#39;);
+
+
+
+function renderPage(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById(&#39;page_num&#39;).textContent = num;
+}
+
+
+
+function queueRenderPage(num) {
+  if (pageRendering) {
+    pageNumPending = num;
+  } else {
+    renderPage(num);
+  }
+}
+
+
+
+function onPrevPage() {
+  if (pageNum &lt;= 1) {
+    return;
+  }
+  pageNum--;
+  queueRenderPage(pageNum);
+}
+document.getElementById(&#39;prev&#39;).addEventListener(&#39;click&#39;, onPrevPage);
+
+
+
+function onNextPage() {
+  if (pageNum &gt;= pdfDoc.numPages) {
+    return;
+  }
+  pageNum++;
+  queueRenderPage(pageNum);
+}
+document.getElementById(&#39;next&#39;).addEventListener(&#39;click&#39;, onNextPage);
+
+
+
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+  pdfDoc = pdfDoc_;
+  document.getElementById(&#39;page_count&#39;).textContent = pdfDoc.numPages;
+
+  
+  renderPage(pageNum);
+});
+}
+
+&lt;/script&gt; --&gt;
+&lt;embed src=&#34;content.pdf&#34; width=&#34;100%&#34; height=&#34;500px&#34; type=&#39;application/pdf&#39;&gt;</description>
     </item>
     
     <item>

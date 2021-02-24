@@ -763,7 +763,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    0 min read
+    1 min read
   </span>
   
 
@@ -793,7 +793,129 @@
   <div class="article-container">
 
     <div class="article-style">
-      <embed src="content.pdf" width="100%" height="500px" type='application/pdf'>
+      <!-- <script type="text/javascript" src="/js/pdf-js/build/pdf.js"></script>
+<style>
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+  width: 100%;
+  height: auto;
+}
+#paginator{
+    text-align: center;
+    margin-bottom: 10px;
+}
+</style>
+
+<div id="paginator">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    &nbsp; &nbsp;
+    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+</div>
+<div id="embed-pdf-container">
+    <canvas id="the-canvas"></canvas>
+</div>
+
+<script type="text/javascript">
+window.onload = function() {
+
+
+
+var url = "https:\/\/florestan-eusebius.github.io\/" + "";
+
+
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/florestan-eusebius.github.io\/" + '/js/pdf-js/build/pdf.worker.js';
+
+
+var pdfDoc = null,
+    pageNum = 1,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 3,
+    canvas = document.getElementById('the-canvas'),
+    ctx = canvas.getContext('2d');
+
+
+
+function renderPage(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById('page_num').textContent = num;
+}
+
+
+
+function queueRenderPage(num) {
+  if (pageRendering) {
+    pageNumPending = num;
+  } else {
+    renderPage(num);
+  }
+}
+
+
+
+function onPrevPage() {
+  if (pageNum <= 1) {
+    return;
+  }
+  pageNum--;
+  queueRenderPage(pageNum);
+}
+document.getElementById('prev').addEventListener('click', onPrevPage);
+
+
+
+function onNextPage() {
+  if (pageNum >= pdfDoc.numPages) {
+    return;
+  }
+  pageNum++;
+  queueRenderPage(pageNum);
+}
+document.getElementById('next').addEventListener('click', onNextPage);
+
+
+
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+  pdfDoc = pdfDoc_;
+  document.getElementById('page_count').textContent = pdfDoc.numPages;
+
+  
+  renderPage(pageNum);
+});
+}
+
+</script> -->
+<embed src="content.pdf" width="100%" height="500px" type='application/pdf'>
     </div>
 
     
@@ -804,90 +926,6 @@
 
 
 
-
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/&amp;text=%e7%ba%a0%e7%bc%a0%e5%92%8c%e7%bb%9f%e8%ae%a1%e5%8a%9b%e5%ad%a6%e7%9a%84%e5%9f%ba%e7%a1%80" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/&amp;t=%e7%ba%a0%e7%bc%a0%e5%92%8c%e7%bb%9f%e8%ae%a1%e5%8a%9b%e5%ad%a6%e7%9a%84%e5%9f%ba%e7%a1%80" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=%e7%ba%a0%e7%bc%a0%e5%92%8c%e7%bb%9f%e8%ae%a1%e5%8a%9b%e5%ad%a6%e7%9a%84%e5%9f%ba%e7%a1%80&amp;body=https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/&amp;title=%e7%ba%a0%e7%bc%a0%e5%92%8c%e7%bb%9f%e8%ae%a1%e5%8a%9b%e5%ad%a6%e7%9a%84%e5%9f%ba%e7%a1%80" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=%e7%ba%a0%e7%bc%a0%e5%92%8c%e7%bb%9f%e8%ae%a1%e5%8a%9b%e5%ad%a6%e7%9a%84%e5%9f%ba%e7%a1%80%20https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/&amp;title=%e7%ba%a0%e7%bc%a0%e5%92%8c%e7%bb%9f%e8%ae%a1%e5%8a%9b%e5%ad%a6%e7%9a%84%e5%9f%ba%e7%a1%80" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
 
 
 
