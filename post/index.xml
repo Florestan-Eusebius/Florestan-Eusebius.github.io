@@ -215,7 +215,7 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 
 
 &lt;figure  id=&#34;figure-figure-2-poster-world-peace&#34;&gt;
-    &lt;img alt=&#34;Figure 2: Poster, World Peace&#34; srcset=&#34;
+    &lt;img alt=&#34;Figure 2. Poster, World Peace&#34; srcset=&#34;
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/peace_hudacecdf3ed2add83c5c75f4ce2c66409_88047_47c73cee1c9294d3c601d09ab07fdd07.jpg 400w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/peace_hudacecdf3ed2add83c5c75f4ce2c66409_88047_325b3e1dd752e9e25e0d0812256a5149.jpg 760w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/peace_hudacecdf3ed2add83c5c75f4ce2c66409_88047_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
@@ -228,7 +228,7 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
     
     
     &lt;figcaption&gt;
-      Figure 2: Poster, World Peace
+      Figure 2. Poster, World Peace
     &lt;/figcaption&gt;
   
 &lt;/figure&gt;
@@ -242,7 +242,7 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 
 
 &lt;figure  id=&#34;figure-figure-3-poster-the-mother-is-calling-us&#34;&gt;
-    &lt;img alt=&#34;Figure 3 Poster, The Mother is Calling Us&#34; srcset=&#34;
+    &lt;img alt=&#34;Figure 3. Poster, The Mother is Calling Us&#34; srcset=&#34;
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/calling_hu2692050a21852b75efda6e187596730b_441089_3f16a8edef728f7a0ae9ed46b8991294.jpg 400w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/calling_hu2692050a21852b75efda6e187596730b_441089_6579a1520fe2f83a57a7c5ed3777b190.jpg 760w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/calling_hu2692050a21852b75efda6e187596730b_441089_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
@@ -255,7 +255,7 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
     
     
     &lt;figcaption&gt;
-      Figure 3 Poster, The Mother is Calling Us
+      Figure 3. Poster, The Mother is Calling Us
     &lt;/figcaption&gt;
   
 &lt;/figure&gt;
@@ -269,7 +269,7 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 
 
 &lt;figure  id=&#34;figure-figure-4-the-cover-page-of-nyt-oct-5-1957&#34;&gt;
-    &lt;img alt=&#34;Figure 4: The cover page of NYT, Oct. 5, 1957.&#34; srcset=&#34;
+    &lt;img alt=&#34;Figure 4. The cover page of NYT, Oct. 5, 1957.&#34; srcset=&#34;
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/nyt_hu2caa15fe89c763d745c1faaa4b7998f2_212651_f85d84b6535225e2327e0157cd1b062d.jpg 400w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/nyt_hu2caa15fe89c763d745c1faaa4b7998f2_212651_e881bb54a1e6c82e07ab53d62e63f4f8.jpg 760w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/nyt_hu2caa15fe89c763d745c1faaa4b7998f2_212651_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
@@ -282,7 +282,7 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
     
     
     &lt;figcaption&gt;
-      Figure 4: The cover page of NYT, Oct. 5, 1957.
+      Figure 4. The cover page of NYT, Oct. 5, 1957.
     &lt;/figcaption&gt;
   
 &lt;/figure&gt;
@@ -296,7 +296,7 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 
 
 &lt;figure  id=&#34;figure-figure-5-the-upper-left-corner-of-in-the-name-of-peace&#34;&gt;
-    &lt;img alt=&#34;Figure 5 The upper left corner of &amp;#39;In the Name of Peace&amp;#39;&#34; srcset=&#34;
+    &lt;img alt=&#34;Figure 5. The upper left corner of &amp;#39;In the Name of Peace&amp;#39;&#34; srcset=&#34;
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/upper%20left_hu28a8d7b2e2c0518b96b2f3bf4ef2f7b5_1728562_57c7584d77db63cbfcae924cd64bbf9b.png 400w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/upper%20left_hu28a8d7b2e2c0518b96b2f3bf4ef2f7b5_1728562_b97937e4298181ce557961dc922825d9.png 760w,
            /post/in_the_name_of_peace_the_first_poster_for_soviet_space_programme/upper%20left_hu28a8d7b2e2c0518b96b2f3bf4ef2f7b5_1728562_1200x1200_fit_lanczos_2.png 1200w&#34;
@@ -309,13 +309,137 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
     
     
     &lt;figcaption&gt;
-      Figure 5 The upper left corner of &amp;lsquo;In the Name of Peace&amp;rsquo;
+      Figure 5. The upper left corner of &amp;lsquo;In the Name of Peace&amp;rsquo;
     &lt;/figcaption&gt;
   
 &lt;/figure&gt;
 
 &lt;p&gt;More relations to propaganda can be discovered in this poster: the bright colour, the clean lines and the apparent figures are all typical of Soviet posters, for they are created to influence everyone in the country, including, or even especially, one that are not leisured and well-educated.&lt;/p&gt;
 &lt;p&gt;From the poster one can see how the USSR make full use of the space programme for propaganda. However, such politically practical attitude also had a negative impact on the space exploration and even propaganda itself. It was common in USSR that some scientific components were cancelled for an early launch. In 1958, the American satellite Explorer 1 confirmed the existence of the Van Allen belt, which was of scientific importance as well as had a positive political effect. Today in China, except for ‘what China achieves’, the scientific significance is also a key point in publicity. Scientists mostly hope that there could be less politics but more science in the space programme, but actually such a big project consuming public funds can never, from its birth, get rid of public emotions. It is whether public emotion towards science is positive and healthy that matters.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Time - a Physical Point of View</title>
+      <link>https://florestan-eusebius.github.io/post/time-a-physical-point-of-view/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://florestan-eusebius.github.io/post/time-a-physical-point-of-view/</guid>
+      <description>&lt;p&gt;‘Time’ is one of the most common physical concepts in everyday life, but what exactly it is has been one of the most difficult problems in physics and philosophy. Generations of physicists’ efforts to clarify the concept of time and its properties have proved fruitful. In this article the problem what ‘time’ means is discussed from the point of view of physical theories.&lt;/p&gt;
+&lt;p&gt;For a long time in the past people thought that there exists a universal, absolute time. In the period from Newton to Einstein, the general opinion is that an &lt;em&gt;absolute rest frame&lt;/em&gt; (a frame is something according to which you discuss the motion of other objects, and ‘rest’ here means not moving) is set in the universe by Nature, or God if you like, and everything that is rest or move in a constant velocity in this absolute rest frame can be viewed as an &lt;em&gt;inertial frame&lt;/em&gt;. In any inertial frame the Newton’s Laws of Motion are satisfied. Every spatial point in the absolute rest frame is indistinguishable in their dynamical properties, or equivalently, the space is said to be flat. Everything lies in this flat space and evolves from the past to the future (see Figure 1). ‘Time’ as a parameter indicating the evolution is introduced, that is, everything is given a same ‘time’ now, and a same larger ‘time’ later… The ‘time’ of any event is independent of whether you are moving or at rest, thus is said to be &lt;em&gt;absolute&lt;/em&gt;, and wherever you are, thus is said to be &lt;em&gt;universal&lt;/em&gt;. In fact, the discussion above seems trivial, so that taking the definition of ‘time’ seriously was a task for philosopher rather than physicist at that time.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-1-the-space-as-a-whole-evolves-under-a-universal-absolute-time&#34;&gt;
+    &lt;img alt=&#34;Figure 1. The space as a whole evolves under a universal, absolute time.&#34; srcset=&#34;
+           /post/time-a-physical-point-of-view/absolute_hu1f4cea35ef69e883a35bc7f459f1631a_101152_aa81ee3ac180c4f044f50682671d1f01.png 400w,
+           /post/time-a-physical-point-of-view/absolute_hu1f4cea35ef69e883a35bc7f459f1631a_101152_f7d64d9aca526ce24c990b752258017e.png 760w,
+           /post/time-a-physical-point-of-view/absolute_hu1f4cea35ef69e883a35bc7f459f1631a_101152_1200x1200_fit_lanczos_2.png 1200w&#34;
+           src=&#34;https://florestan-eusebius.github.io/post/time-a-physical-point-of-view/absolute_hu1f4cea35ef69e883a35bc7f459f1631a_101152_aa81ee3ac180c4f044f50682671d1f01.png&#34;
+           width=&#34;760&#34;
+           height=&#34;410&#34;
+           loading=&#34;lazy&#34;
+           data-zoomable /&gt;
+    
+    
+    
+    &lt;figcaption&gt;
+      Figure 1. The space as a whole evolves under a universal, absolute time.
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;However, if we relate the order of time to causality, the concept of universal and absolute time relies on an assumption that there is no limit for the velocity for message transferring. Causality requires that if event A ‘leads to’ event B, then B must happen later than A. Although it is not necessary to equal the time order with causality, it seems natural to require that the time order should allow a possibility for a causal relationship, that is, if it is impossible to establish a causal relationship between two events happening in two space-time points, it is meaningless to define an absolute time order between the two points. For example, imagine that all messages cannot be transferred in a velocity more than a constant, say $c$, then if event B happens later than A for a time $t$ and apart from A by a distance more than $ct$, it will be impossible for any message to be sent from A to B, that is, in no way may A lead to B. In such a case, talking about whether A happens earlier or later than B is meaningless. But what do I mean by saying that ‘B happens later than A for a time $t$’? The answer is that it is just what I, as an observer, see, while for other observers, the result of the order of A and B may be different – there is no absolute time order between events A and B!&lt;/p&gt;
+&lt;p&gt;A more systematic statement of our previous discussion is called the theory of &lt;em&gt;relativity&lt;/em&gt;. The special theory of relativity, which is concerning about the properties of space-time, was proposed by Albert Einstein in 1905. Instead of an absolute rest frame, Einstein took as a basic assumption that every inertial frame is equivalent, the definition of inertial frame is then replaced by ‘a frame in which physical laws holds.’ Different inertial frames are still or moving in a constant velocity with respect to each other. The second assumption of special relativity is that there is a maximum velocity for transferring information, which is exactly the speed of light. Here something peculiar occurs: the maximum velocity, i.e., the speed of light, is the same for any inertial frame since all of them are equal. According to our ‘common sense’, as well as the old opinion that there is a universal, absolute time, the speed of an object is higher if the observer moves in a different direction with the object, and lower if the direction is the same. However, in special relativity, the speed of light is the same in every inertial frame even if they may be moving with respect to one another. It cannot make sense unless the structure of space and time is thoroughly different from that space evolves simultaneously with a universal, absolute time.&lt;/p&gt;
+&lt;p&gt;The key result of the special theory of relativity is that space-time, not ‘space and time’, forms a four-dimensional Minkowski space as a whole, and changing of inertial frame is nothing but changing of basis that preserves the inner product. Any event in this framework is a point in the 4D space, and once a set of bases or equivalently an inertial frame is chosen, the value of the temporal coordinate is defined as ‘time’ in this inertial frame. The ‘space’ in ‘Minkowski space’ is a mathematical conception referring to a set with some structure in it. One may be familiar with a three-dimensional Euclidean space, which is a ‘common’ 3D space, and one can define the distance of two points in it. In a 3D Euclidean space, three coordinates may be chosen and a point can be expressed by three numbers. If you change the coordinates axes, for example, you rotate them, the point is leaving the same though, the numbers representing it may be changed (see Figure 2). A four-dimensional Minkowski space is similar, except for that an extra dimension of time is added, and the ‘distance’, formally called &lt;em&gt;interval&lt;/em&gt;, between two points is redefined. In an inertial frame, or you can say in a ‘coordinate’ similar to the 3D Euclidean space case, a group of four numbers can represent an event, i.e., a space-time ‘point’, three numbers in which is the spatial position and the other the time. Changing from an inertial frame to another is similar to changing the coordinates in a 3D Euclidean space, the four numbers representing the event may shift, that is, the position and time observed in the new frame is different, but the event point itself is unchanged.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-2-point-a-is-unchanged-while-rotating-the-axes-shifts-the-coordinates-from-11-to-14140&#34;&gt;
+    &lt;img alt=&#34;Figure 2. Point A is unchanged, while rotating the axes shifts the coordinates from (1,1) to (1.414,0).&#34; srcset=&#34;
+           /post/time-a-physical-point-of-view/rotate_hu8762dfd9763cead23bddd9b16bd0ab4b_63439_86466597ccc99cc85ffcf29c2e8f381c.png 400w,
+           /post/time-a-physical-point-of-view/rotate_hu8762dfd9763cead23bddd9b16bd0ab4b_63439_06bb69e1ef26818039b8a1946acd8245.png 760w,
+           /post/time-a-physical-point-of-view/rotate_hu8762dfd9763cead23bddd9b16bd0ab4b_63439_1200x1200_fit_lanczos_2.png 1200w&#34;
+           src=&#34;https://florestan-eusebius.github.io/post/time-a-physical-point-of-view/rotate_hu8762dfd9763cead23bddd9b16bd0ab4b_63439_86466597ccc99cc85ffcf29c2e8f381c.png&#34;
+           width=&#34;760&#34;
+           height=&#34;736&#34;
+           loading=&#34;lazy&#34;
+           data-zoomable /&gt;
+    
+    
+    
+    &lt;figcaption&gt;
+      Figure 2. Point A is unchanged, while rotating the axes shifts the coordinates from (1,1) to (1.414,0).
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Back to the problem of absolute time order, in general relativity, events themselves are fixed points in the Minkowski space, and the interval between two events is unchanged whichever inertial frame you take, so the interval is somehow ‘absolute’ rather than relative. If two points are such that a beam of light cannot reach the other from one, they are said to have a space-like interval. Since light cannot travel between these two space-time points, neither can any message, so there is no absolute time order attached to them, and you can choose an inertial frame in which they happen at the same time. If two points can exactly be connected by a beam of light, the interval is said to be light-like, and if two points can be connected be something travels slower than a light, absolute time order can be attached to them, and the interval is called time-like (see Figure 3).&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-3-three-kinds-of-intervals&#34;&gt;
+    &lt;img alt=&#34;Figure 3. Three kinds of intervals.&#34; srcset=&#34;
+           /post/time-a-physical-point-of-view/interval_hu8100060ebde3f18880028f6c74587002_140687_ee1522711c474d16ba5e00874ca70051.png 400w,
+           /post/time-a-physical-point-of-view/interval_hu8100060ebde3f18880028f6c74587002_140687_e8b5181e0c00d4fa0ebe6e30490dd78c.png 760w,
+           /post/time-a-physical-point-of-view/interval_hu8100060ebde3f18880028f6c74587002_140687_1200x1200_fit_lanczos_2.png 1200w&#34;
+           src=&#34;https://florestan-eusebius.github.io/post/time-a-physical-point-of-view/interval_hu8100060ebde3f18880028f6c74587002_140687_ee1522711c474d16ba5e00874ca70051.png&#34;
+           width=&#34;760&#34;
+           height=&#34;519&#34;
+           loading=&#34;lazy&#34;
+           data-zoomable /&gt;
+    
+    
+    
+    &lt;figcaption&gt;
+      Figure 3. Three kinds of intervals.
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;One may also define the ‘proper time’ of an object in special relativity. The proper time of an object is what the clock carried by the object reads. A clock is something performing a periodical motion, that is, repeating some actions again and again. If the object is still in some inertial frame, the proper time of the object is the same as the time we defined in the inertial frame. Now we can draw a general picture in the framework of special relativity: space-time is a four-dimensional Minkowski space, and that an event is a point in the space, and that an object is represented by a curve called world line in the space. A frame is called inertial if physical laws hold in it, and the time in the frame is the proper time of a still object in the frame. Now one just need to define the proper time of an object, which is amazingly simple: the proper time is what the clock carried by the object reads.&lt;/p&gt;
+&lt;p&gt;Before going deeper in the space-time structure, making the concept of clock clear is necessary. As is mentioned above, a clock is something performing repeated actions, and what the clock reads is the number of the repeating during the interval you want to measure. However, how can you claim that every time the clock repeats the action, it takes the same time? Answering this question may lead us to a circular argument, for the ‘time’ itself is defined by the clock. What we need to do is to choose a good time standard. Fortunately, we have required that inertial frames are moving in a constant velocity with respect to each other, and this property can be used as a regulation for time standard. This is a special case for that if the time standard is good enough, good physical results can be derived. Another kind of such cases is that phenomenon we expect to be exactly periodical can be observed so. For example, if we choose the revolution period of earth as a standard time period, more periodical motions which is more natural are not exactly periodical, such as a single pendulum and the oscillation of an electromagnetic wave emitted by an atom. Now, people choose the caesium atom as the standard clock, and define one second as ‘the duration of 9,192,631,770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium-133 atom’.&lt;/p&gt;
+&lt;p&gt;After developing the special theory of relativity, Einstein is still discontent with the unnatural status of the inertial frame – special relativity cancels the special status of some absolute rest frame, but inertial frame is still special in such a theory. Such a special status of inertial frames is related with the property that the space-time Minkowski space is a linear space, which is ‘flat’. However, in the theoretical point of view, there is no reason to believe that the space-time is flat, while in the experimental point of view, almost nothing moves in a constant velocity with respect to some other things, thus finding an inertial frame is nearly impossible. To deal with such problems, as well as to take gravity into account, in 1915 Einstein proposed the general theory of relativity. According to general relativity the space-time is no longer a flat linear space but a four-dimensional Riemann manifold. A Riemann manifold is roughly – but of no mathematical rigour – a surface with distance defined near every point (see Figure 4). Such surface is not necessarily flat, and local coordinates containing three spatial components and a time component is defined on the neighbourhood of every point. Such coordinates can be transformed to any form for convenience so that a fixed point (an event) and be assigned a time to a very arbitrary extent. Now except for the space-time and events themselves, which are all about the physical objects and are independent of how we represent them, any representation of them is local and relative.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-figure-4-a-manifold-is-like-a-surface-with-local-coordinates-and-length-defined-on-the-neighbourhood-of-every-point-an-observer-carries-a-clock-which-indicates-his-proper-time&#34;&gt;
+    &lt;img alt=&#34;Figure 4. A manifold is like a surface, with local coordinates and &amp;#39;length&amp;#39; defined on the neighbourhood of every point. An observer carries a clock, which indicates his proper time.&#34; srcset=&#34;
+           /post/time-a-physical-point-of-view/gr_huc2ba80879a1fb5a48be800a3d3584063_103970_311753b95098bb6668beb57546c8d5fb.png 400w,
+           /post/time-a-physical-point-of-view/gr_huc2ba80879a1fb5a48be800a3d3584063_103970_07c6c5ed04b8be7cedda601042749ff1.png 760w,
+           /post/time-a-physical-point-of-view/gr_huc2ba80879a1fb5a48be800a3d3584063_103970_1200x1200_fit_lanczos_2.png 1200w&#34;
+           src=&#34;https://florestan-eusebius.github.io/post/time-a-physical-point-of-view/gr_huc2ba80879a1fb5a48be800a3d3584063_103970_311753b95098bb6668beb57546c8d5fb.png&#34;
+           width=&#34;760&#34;
+           height=&#34;571&#34;
+           loading=&#34;lazy&#34;
+           data-zoomable /&gt;
+    
+    
+    
+    &lt;figcaption&gt;
+      Figure 4. A manifold is like a surface, with local coordinates and &amp;lsquo;length&amp;rsquo; defined on the neighbourhood of every point. An observer carries a clock, which indicates his proper time.
+    &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Besides the local coordinates, local, and only local observers and also be defined. ‘Local’ means that the observer and only observe a small neighbourhood around him. The proper time of the local observer is defined as usual: what the clock he carries reads (see Figure 4). This definition of time is independent of the coordinates, and may be the only definition of time of solid physical meaning.&lt;/p&gt;
+&lt;p&gt;Up to now, all definitions of time we introduced is local, that is, can only be applied to a small region. However, physicists want to discuss the evolution of the universe, which cannot be discussed unless a time applicable to the whole universe is defined. As we have introduced, two points of space-like interval do not have an absolute time order, so we are free to view them simultaneous. A three-dimensional surface in the space-time can be viewed as an equal-time surface if every two points on it is of space-like interval. We can cut the four-dimensional space-time of universe into a series of such surfaces, and give each surface a time parameter. The problem is that the division is still to some extent arbitrary. Fortunately, the cosmological principle demands certain symmetry on the surface, which simplifies the later research about the universe. Physicists &lt;em&gt;believe&lt;/em&gt; that there is a unique division that satisfies such symmetry, and the time of the whole universe is thus uniquely defined.&lt;/p&gt;
+&lt;p&gt;Readers may be surprised that the definition of time seems so ‘subjective’ – the cosmological time is defined by a division according to certain symmetries, which is essentially for convenience, and the proper time can be only defined for a local observer and is defined by a clock. Why do physicists believe these definitions? Why not searching for a more ‘objective’ definition? The answer is that the ideal form of physics is nothing about some (undefined) essence hidden behind the phenomenon, instead, it is just a self-consistent, predictable, fallible explanation for our observation. And according to the Occam’s razer, if different theories lead to the same observation, we choose the simplest one. The current definition of time is the best definition we can give; however, it is not a final version. We are not able to explain fundamentally why time is irreversible, and the general theory of relativity is not consistent with quantum mechanics. More secrets of time are still to be explored.&lt;/p&gt;
 </description>
     </item>
     
