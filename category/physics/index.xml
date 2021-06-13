@@ -5,7 +5,7 @@
     <link>https://florestan-eusebius.github.io/category/physics/</link>
       <atom:link href="https://florestan-eusebius.github.io/category/physics/index.xml" rel="self" type="application/rss+xml" />
     <description>Physics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 May 2021 10:40:32 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://florestan-eusebius.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Physics</title>
@@ -13,18 +13,10 @@
     </image>
     
     <item>
-      <title>旋转群与角动量</title>
-      <link>https://florestan-eusebius.github.io/post/%E6%97%8B%E8%BD%AC%E7%BE%A4%E4%B8%8E%E8%A7%92%E5%8A%A8%E9%87%8F/</link>
-      <pubDate>Sun, 16 May 2021 10:40:32 +0800</pubDate>
-      <guid>https://florestan-eusebius.github.io/post/%E6%97%8B%E8%BD%AC%E7%BE%A4%E4%B8%8E%E8%A7%92%E5%8A%A8%E9%87%8F/</guid>
-      <description>&lt;embed src=&#34;RotationGroup.pdf&#34; width=&#34;100%&#34; height=&#34;850&#34; type=&#39;application/pdf&#39;&gt;</description>
-    </item>
-    
-    <item>
       <title>Crank-Nicolson Method for Solving 1D Schrödinger Equation</title>
-      <link>https://florestan-eusebius.github.io/post/getting-started/</link>
+      <link>https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/</link>
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://florestan-eusebius.github.io/post/getting-started/</guid>
+      <guid>https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/</guid>
       <description>&lt;p&gt;To solve a one-dimensional time-dependent Schrödinger equation numerically, consider a difference method.&lt;/p&gt;
 &lt;p&gt;The equation to be solved is
 $$
@@ -79,10 +71,10 @@ which ensure the stability for any choice of $\Delta x$ and $\Delta t$.&lt;/p&gt
     </item>
     
     <item>
-      <title>纠缠和统计力学的基础</title>
-      <link>https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/</link>
+      <title>Notes for Physics</title>
+      <link>https://florestan-eusebius.github.io/post/notes_for_physics/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://florestan-eusebius.github.io/post/%E7%BA%A0%E7%BC%A0%E5%92%8C%E7%BB%9F%E8%AE%A1%E5%8A%9B%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://florestan-eusebius.github.io/post/notes_for_physics/</guid>
       <description>&lt;!-- &lt;script type=&#34;text/javascript&#34; src=&#34;https://florestan-eusebius.github.io/js/pdf-js/build/pdf.js&#34;&gt;&lt;/script&gt;
 &lt;style&gt;
 #the-canvas {
@@ -205,7 +197,15 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 }
 
 &lt;/script&gt; --&gt;
-&lt;embed src=&#34;content.pdf&#34; width=&#34;100%&#34; height=&#34;850&#34; type=&#39;application/pdf&#39;&gt;</description>
+&lt;p&gt;Analytical and numerical approaches to Bose Hubbard Model (not finished).
+&lt;a href=&#34;BHM.pdf&#34;&gt; Bose Hubbard Model &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Transformations in Physics (not finished).
+&lt;a href=&#34;transf.pdf&#34;&gt; Transformations in Physics &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;等概率原理的假设是必要的吗?
+&lt;a href=&#34;Entanglement and statistic mechanics.pdf&#34;&gt; 纠缠和统计力学的基础 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于旋转群和量子力学中角动量的讨论.
+&lt;a href=&#34;RotationGroup.pdf&#34;&gt; 旋转群与角动量 &lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>

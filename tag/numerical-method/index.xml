@@ -14,9 +14,9 @@
     
     <item>
       <title>Crank-Nicolson Method for Solving 1D Schrödinger Equation</title>
-      <link>https://florestan-eusebius.github.io/post/getting-started/</link>
+      <link>https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/</link>
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://florestan-eusebius.github.io/post/getting-started/</guid>
+      <guid>https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/</guid>
       <description>&lt;p&gt;To solve a one-dimensional time-dependent Schrödinger equation numerically, consider a difference method.&lt;/p&gt;
 &lt;p&gt;The equation to be solved is
 $$

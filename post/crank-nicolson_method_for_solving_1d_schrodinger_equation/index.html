@@ -33,10 +33,10 @@
   
     
   
-  <meta name="description" content="Undergraduate in Physics" />
+  <meta name="description" content="A stable numerical method for 1D time-dependent Schrödinger Equation." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://florestan-eusebius.github.io/tag/quantum-mechanics/" />
+  <link rel="alternate" hreflang="en-us" href="https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/" />
 
   
 
@@ -280,8 +280,6 @@
   
 
   
-    <link rel="alternate" href="/tag/quantum-mechanics/index.xml" type="application/rss+xml" title="Wang Yifei" />
-  
 
   
     <link rel="manifest" href="/index.webmanifest" />
@@ -290,7 +288,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://florestan-eusebius.github.io/tag/quantum-mechanics/" />
+  <link rel="canonical" href="https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/" />
 
   
   
@@ -306,29 +304,78 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Wang Yifei" />
-  <meta property="og:url" content="https://florestan-eusebius.github.io/tag/quantum-mechanics/" />
-  <meta property="og:title" content="Quantum Mechanics | Wang Yifei" />
-  <meta property="og:description" content="Undergraduate in Physics" /><meta property="og:image" content="https://florestan-eusebius.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:url" content="https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/" />
+  <meta property="og:title" content="Crank-Nicolson Method for Solving 1D Schrödinger Equation | Wang Yifei" />
+  <meta property="og:description" content="A stable numerical method for 1D time-dependent Schrödinger Equation." /><meta property="og:image" content="https://florestan-eusebius.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="https://florestan-eusebius.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2020-04-03T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2021-02-23T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2021-02-23T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://florestan-eusebius.github.io/post/crank-nicolson_method_for_solving_1d_schrodinger_equation/"
+  },
+  "headline": "Crank-Nicolson Method for Solving 1D Schrödinger Equation",
+  
+  "datePublished": "2021-02-23T00:00:00Z",
+  "dateModified": "2021-02-23T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "王逸飞 | Wang Yifei"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wang Yifei",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://florestan-eusebius.github.io/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "A stable numerical method for 1D time-dependent Schrödinger Equation."
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>Quantum Mechanics | Wang Yifei</title>
+  <title>Crank-Nicolson Method for Solving 1D Schrödinger Equation | Wang Yifei</title>
 </head>
 
 
@@ -629,57 +676,281 @@
   </div>
 
   <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Crank-Nicolson Method for Solving 1D Schrödinger Equation</h1>
+
+  
+  <p class="page-subtitle">A stable numerical method for 1D time-dependent Schrödinger Equation.</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      王逸飞 | Wang Yifei</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Feb 23, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/academic/">Academic</a>, <a href="/category/physics/">Physics</a></span>
+  
+
+</div>
+
     
 
 
 
 
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Quantum Mechanics</h1>
-
-  
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/epr%E5%88%B0%E5%BA%95%E8%AF%B4%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/" >EPR到底说了些什么？</a></h2>
-      <div class="article-style">
-        
-          EPR悖论一直是学界内外的一个热词, 但中文互联网上对EPR到底说了些什么的介绍并不尽如人意, 一会说量子力学不完备, 一会说定域实在论和量子力学不相容, 一会说量子纠缠和"鬼魅般的超距作用", 这些词组, 或多或少和EPR有些联系, 但它们究竟是怎样的逻辑关系? EPR的原始论文究竟讲了些什么? 这就是本文试图说明的.
-        
-      </div>
+    <div class="article-style">
+      <p>To solve a one-dimensional time-dependent Schrödinger equation numerically, consider a difference method.</p>
+<p>The equation to be solved is
+$$
+\mathrm{i}\hbar\frac{\partial \psi(x, t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^{2} \psi(x, t)}{\partial x^{2}}+V(x, t) \psi(x, t).
+$$
+Discretise the $x$, and denote $x_j=j\Delta x,\ j=1,\cdots,L$ and $\psi(x_j)=\psi_j$ To perform the difference, define the discretised Hamiltonian $H_D$ as
+$$
+H_D\psi_j=-\frac{\hbar^2}{2m}\frac{1}{\Delta x^2}\left[\psi_{j-1}+\psi_{j+1}-2\psi_j\right]+V_j\psi_j,
+$$
+which can be viewed as a matrix performed on a vector $(\psi_1,\cdots,\psi_L)$. Discretise the time and denote $\psi(t_n)=\psi(n\Delta t)=\psi^n$. A trivial differential method is
+$$
+\mathrm{i}\hbar\frac{1}{\Delta t}(\psi^n_{j+1}-\psi^n_j)=H_D\psi^n_j,
+$$
+i.e.,
+$$
+\psi^{n+1}_j=\left(1-\mathrm{i}\Delta t H_D/\hbar\right)\psi^n_j.
+$$
+To check the stability of such a method, consider the analytical solution to the discretised equation for $V_j$ constant
+$$
+\psi^n_j=\xi^n\exp(\mathrm{i}kj\Delta x),
+$$
+which yields
+$$
+\xi=1-\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right].
+$$
+For any $\Delta x$ and $\Delta t$, $|\xi|&gt;1$, indicating that this method is always unstable.</p>
+<p>A modification of this method is to replace the discretisation form by</p>
+<p>$$
+\psi^{n+1}_j=\psi^n_j-\mathrm{i}\Delta t H_D/\hbar\psi^{n+1}_j,
+$$</p>
+<p>i.e.,</p>
+<p>$$
+\psi_{j}^{n+1}=\sum_{j'}\left(1+\mathrm{i} \Delta t H_D/\hbar\right)_{jj'}^{-1} \psi_{j'}^{n}
+$$</p>
+<p>One can check that in this method
+$$
+\xi=\frac{1}{1+\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]},
+$$
+which indicates that this method is always stable. However, the time evolution $\left(1+\mathrm{i} \Delta t H_D/\hbar\right)^{-1}$ is still not unitary, so that it does not preserve the norm of the wave function.</p>
+<p>A further modification is to set the time evolution as
+$$
+\frac{1-\mathrm{i}\Delta tH_D/2\hbar}{1+\mathrm{i}\Delta t H_D/2\hbar}.
+$$
+To evaluate the stability,
+$$
+\xi=\frac{1-\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]}{1+\frac{\mathrm{i} \Delta t}{\hbar}\left[\frac{\hbar^2}{2m}\frac{4}{\Delta^{2} x} \sin ^{2}(k \Delta x / 2)+V_{j}\right]},
+$$
+which ensure the stability for any choice of $\Delta x$ and $\Delta t$.</p>
+<p>The third method is called Crank-Nicolson method. It is an implicit form and requires an inverse of a tridiagonal matrix, whose time cost is $\mathcal{O}(L)$. To calculate the time evolution, one need to perform matrix products, whose time cost is $\mathcal{O}(L^2)$.</p>
+<p>The code for this method with a periodic boundary condition can be found at <a href="https://github.com/Florestan-Eusebius/Crank-Nicolson-Solver" target="_blank" rel="noopener">Florestan-Eusebius/Crank-Nicolson-Solver: The Crank Nicolson Solver to solve 1D time dependent Schrödinger equation. (github.com)</a>, where the harmonic oscillator is tested as an example. We see that result calculated by this method agrees with the theoretical result perfectly.</p>
+
     </div>
-  
 
-  
+    
 
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/numerical-method/">Numerical Method</a>
+  
+  <a class="badge badge-light" href="/tag/differential-equation/">Differential Equation</a>
+  
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://florestan-eusebius.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu03d640b97dfc3ace593975209008ac60_5925768_270x270_fill_q75_lanczos_center.jpg" alt="王逸飞 | Wang Yifei"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://florestan-eusebius.github.io/">王逸飞 | Wang Yifei</a></h5>
+      <h6 class="card-subtitle">Undergraduate in Physics</h6>
+      <p class="card-text">Undergraduate in Physics, interested in condensed matter physics.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:wang_yifei@pku.edu.cn" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/florestan-eusebius" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/notes_for_physics/">Notes for Physics</a></li>
+      
+      <li><a href="/post/time-a-physical-point-of-view/">Time - a Physical Point of View</a></li>
+      
+      <li><a href="/post/epr%E5%88%B0%E5%BA%95%E8%AF%B4%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88/">EPR到底说了些什么？</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">
