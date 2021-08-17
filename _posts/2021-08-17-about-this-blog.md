@@ -4,7 +4,7 @@ title: 关于这个博客
 tags: 技术
 ---
 
-之前搭的博客由于太久远, 维护得有些混乱, 干脆推到重来. <!--more-->
+之前搭的博客由于太久远, 维护得有些混乱, 干脆推倒重来. 内容的组织逻辑也有变化. <!--more-->
 
 ## 博客的搭建
 
@@ -33,7 +33,7 @@ git remote add origin git@github.com:<username>/<repository name>.git
 gem install jekyll bundler
 ```
 
-### 使用 `Jekyll` 建立博客
+### 使用 Jekyll 建立博客
 
 在博客目录中 `jekyll new .` 可以建立一个简单的新博客. 我这里直接将 TeXt 主题的文件复制到了本地. 参考[快速开始 - TeXt Theme (tianqi.name)](https://tianqi.name/jekyll-TeXt-theme/docs/zh/quick-start).
 
@@ -60,3 +60,7 @@ bundle exec jekyll server
 ```
 
 预览的过程中, 浏览器中内容可即时刷新. 此时已生成对应文件. 因此直接 add - commit - push 即可完成部署.
+
+## 内容
+
+博客里文章主要分三种, 一是随笔和文艺创作, 二是一些技术向的操作记录, 三是科普或趣味向的学术短文. 考虑到 markdown 对公式的支持还是非常有限, 主要的学术内容放在 Notes 版块里 (见标题栏), 以 PDF 的形式呈现.
