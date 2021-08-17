@@ -38,4 +38,4 @@ key: page-about
 
 [Ceba's Blog](https://blog.ceba.tech/)
 
-[Czarja's Blog](http://blog.czarja.tk/)
+[Czarja's Blog](http://blog.czarja.top/)
