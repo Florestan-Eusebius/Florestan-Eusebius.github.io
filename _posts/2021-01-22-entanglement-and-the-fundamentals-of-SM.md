@@ -1,6 +1,7 @@
 ---
 title: 纠缠和统计力学的基础
 tags: Physics
+mathjax: true
 ---
 
 ## 结论
