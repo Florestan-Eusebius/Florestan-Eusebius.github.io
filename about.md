@@ -25,15 +25,20 @@ title: About
   # fr-LU   : *FR
   # @end locale config
 key: page-about
-article_header:
-  type: cover
-  image:
-    src: /cover.jpg
+# article_header:
+#   type: cover
+#   image:
+#     src: /cover.jpg
 ---
 
 ## 简介
 
 物理学专业本科生, 现就读于北京大学物理学院. 
+
+## 教育经历
+
+- 2018 - 2022 [School of physics](http://www.phy.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), major in Physics. [北京大学](https://www.pku.edu.cn/) [物理学院](http://www.phy.pku.edu.cn/) 物理学专业.
+- 2012 - 2018 [The High School Affiliated to Shaanxi Normal University](http://www.sdfz.com.cn/), [陕西师范大学附属中学](http://www.sdfz.com.cn/) 
 
 ## 友链
 
