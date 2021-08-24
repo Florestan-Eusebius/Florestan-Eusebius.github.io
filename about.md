@@ -49,3 +49,5 @@ key: page-about
 [Ceba's Blog](https://blog.ceba.tech/)
 
 [Czarja's Blog](http://blog.czarja.top/)
+
+[IcyChlorine's Blog](https://icychlorine.github.io/)
