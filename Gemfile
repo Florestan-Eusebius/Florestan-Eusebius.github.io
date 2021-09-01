@@ -4,3 +4,5 @@ source "https://rubygems.org"
 gemspec
 
 gem "webrick", "~> 1.7"
+
+gem "jekyll-lilypond", "~> 0.1.2"
