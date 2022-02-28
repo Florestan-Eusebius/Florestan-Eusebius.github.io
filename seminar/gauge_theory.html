@@ -29,7 +29,8 @@ title: Gauge Theory Seminar
         }
         function validatePass(){
             var pwd=document.getElementById('password').value;
-            if(MD5(pwd) == '5ba62a1f87836199ceac765cb5257d16'){
+            var com=MD5(MD5(pwd)).substring(4,22);
+            if(com == 'aa358c27c5ad16c7b0'){
                 var p=getCharCodes(pwd);
                 var l=p.length;
                 var link = [543070, 673970, 638352, 542696, 695310, 600333, 504350, 635855, 581607, 533016, 1317855, 1372065, 959310, 1436270, 1194453, 1065416, 1317855, 1213179, 1094830, 1271105, 1262547, 1075096];
