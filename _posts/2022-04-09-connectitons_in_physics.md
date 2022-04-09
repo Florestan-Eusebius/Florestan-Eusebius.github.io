@@ -6,7 +6,7 @@ tags:
 mathjax: true
 ---
 
-Modern differential geometry provides a unified picture for different aspects of physics. In this blog article I would like to introduce three kinds of fields relating to connection on a fibre bundle, namely gauge field, general relativity and theory of quantum Hall effect.
+Modern differential geometry provides a unified picture for different aspects of physics. In this blog article I would like to introduce three kinds of physical subjects relating to connection on a fibre bundle, namely gauge field, general relativity and theory of quantum Hall effect. The 'gauge field' part is among the appendices of my undergraduate thesis.
 
 <!--more-->
 
