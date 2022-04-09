@@ -252,7 +252,7 @@ This is a brief note for microeconomics based on lectures given by Prof. Xin Wan
     The first order condition is
     
     $$
-    \frac{w_1}{w_2}=\frac{\text{MP}_1(x_1^\*,x_2^\*)}{\text{MP}_2(x_1^\*,x_2^\*)}=\text{TRS}_{12}(x_1^\*,x_2^\*).
+    \frac{w_1}{w_2}=\frac{\text{MP}_1(x_1^*,x_2^*)}{\text{MP}_2(x_1^*,x_2^*)}=\text{TRS}_{12}(x_1^*,x_2^*).
     $$
 
   - Conditional factor demand functions or derived factor demands are obtained by the minimization and denoted by $x_i(w_1,w_2,y)$.
