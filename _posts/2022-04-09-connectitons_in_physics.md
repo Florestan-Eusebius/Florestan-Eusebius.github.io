@@ -113,7 +113,7 @@ $$
 For notational convenience, we use $s$ to refer to either a section $s=s^i\hat{s}_i\otimes \alpha\in\Omega_M^p\left(E\right)$  where $\alpha$ is a $p$-form or the vector formed by its components $s^i$. The connection is then 
 
 $$
-    D\left(s^i\hat{s}_i\otimes \alpha\right)=\left(\partial_\mu s^i+\Gamma{^i}{_{i\mu}}s^j\right)\hat{s}_i\otimes\mathrm{d}x^\mu\wedge \alpha,
+    D\left(s^i\hat{s}_i\otimes \alpha\right)=\left(\partial_\mu s^i+\Gamma{^i}{_{j\mu}}s^j\right)\hat{s}_i\otimes\mathrm{d}x^\mu\wedge \alpha,
 $$
 
 or in a notational simple way
