@@ -119,7 +119,7 @@ Numbered equations can be referred to conveniently. You do not need to worry tha
 
 所以我们的建议是就让这个套装优雅地停留在上一代学者的记忆中吧.
 
-言归正传, 令 LaTeX 支持中文有许多种方案, 我认为最方便的一种 (也是我最常用的一种是调用 ctex 宏包). 例如将源文件更改为
+言归正传, 令 LaTeX 支持中文有许多种方案, 我认为最方便的一种 (也是我最常用的一种) 是调用 ctex 宏包. 例如将源文件更改为
 
 ```latex
 \documentclass{article}
@@ -190,7 +190,12 @@ graph LR;
     B--删除辅助文件-->F;
 ```
 
-因此, 对应编辑、编译、输出三个模块, 在本地使用 LaTeX 排版就需要下载编辑器、编译程序和 PDF 阅读器. 本文介绍 VSCode + TeXLive 的方案.
+因此, 对应编辑、编译、输出三个模块, 在本地使用 LaTeX 排版就需要下载编辑器、编译程序和 PDF 阅读器. 本文介绍 VSCode + TeXLive 的方案, 其中 VSCode 兼具编辑和阅读的功能, TeXLive 套装则用来编译.
 
-### 下载软件
+### 配置和安装
 
+参考[这篇文章](https://zhuanlan.zhihu.com/p/166523064).
+
+## 进一步学习材料
+
+想要进一步了解如何用 LaTeX 实现更多功能, 例如插入图表等, 可以直接 Google 或参考 Overleaf 提供的[教程](https://www.overleaf.com/learn).
