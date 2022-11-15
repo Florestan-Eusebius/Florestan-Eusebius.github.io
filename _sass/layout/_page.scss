@@ -1,5 +1,19 @@
 body,
 html,
+
+font-face {
+  font-family: "mlmroman";
+  src: url("/_sass/font/mlmr12.ttf");
+}
+
+body {
+  font-family: "mlmroman", Georgia, "Songti SC";
+}
+
+h1, h2, h3 {
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
 .root,
 .layout--page {
   height: 100%;
