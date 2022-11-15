@@ -119,8 +119,10 @@ $$
 or in a notational simple way
 
 $$
+\begin{equation}
     Ds=\mathrm{d}s+\omega\wedge s.
     \label{app1_connection coordinate form}
+\end{equation}
 $$
 
 While for $\phi\in\Omega_M^p\left(\operatorname{End}\left(E\right)\right)$ whose components can be viewed as matrices given a local frame, we have 
@@ -138,22 +140,28 @@ $$
 and hence 
 
 $$
+\begin{equation}
     D\phi = \mathrm{d}\phi +\omega\wedge \phi - \left(-1\right)^p\phi\wedge\omega.
     \label{app1_covariant derivative on phi}
+\end{equation}
 $$
 
 Curvature is now 
 
 $$
+\begin{equation}
     F = \mathrm{d}\omega+\omega\wedge\omega,
     \label{app1_curvature coordinate form}
+\end{equation}
 $$
 
 and the Bianchi identity has the form 
 
 $$
+\begin{equation}
     \mathrm{d}F+\omega\wedge F-F\wedge\omega = 0.
     \label{app1_Bianchi identity in frame}
+\end{equation}
 $$
 
 If we change from one local frame to another, yielding the coordinate transformation $s'=Vs$, coordinate equation (\ref{app1_connection coordinate form}) should change as 
@@ -171,8 +179,10 @@ $$
 Comparing the coefficients we have 
 
 $$
+\begin{equation}
     \omega'=V\left(\partial_\mu\mathrm{d}x^\mu+\omega\right)V^{-1}.
     \label{app1_frame transformation of connection form}
+\end{equation}
 $$
 
 By definition, the curvature $F$ is `physical' therefore we expect a natural transformation

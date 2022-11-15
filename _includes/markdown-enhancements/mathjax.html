@@ -5,7 +5,7 @@
   source0=site.mathjax_autoNumber source1=page.mathjax_autoNumber -%}
 {%- assign _mathjax_autoNumber = __return -%}
 
-<script type="text/x-mathjax-config">
+<!-- <script type="text/x-mathjax-config">
 	var _config = { tex2jax: {
 		inlineMath: [['$','$'], ['\\(','\\)']]
 	}};
@@ -14,4 +14,16 @@
 	{%- endif -%}
 	MathJax.Hub.Config(_config);
 </script>
-<script type="text/javascript" src="{{ _sources.mathjax }}" async></script>
+<script type="text/javascript" src="{{ _sources.mathjax }}" async></script> -->
+
+<script>
+	MathJax = {
+	  tex: {
+		inlineMath: [['$', '$'], ['\\(', '\\)']],
+		tags: 'ams'
+	  },
+	};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+	src="{{ _sources.mathjax }}">
+</script>
