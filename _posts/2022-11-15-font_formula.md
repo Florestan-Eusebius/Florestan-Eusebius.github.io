@@ -5,6 +5,10 @@ tags:
 - 技术
 ---
 
+配置 MathJax 并使用 MLModern 字体.
+
+<!--more-->
+
 ## 配置 MathJax 
 
 该博客使用 MathJax 渲染公式, 配置方法见[官方文档](https://docs.mathjax.org/en/latest/web/configuration.html). 具体来说, 我们在 `/_data/variables.yml` 中定义了 MathJax 源:
