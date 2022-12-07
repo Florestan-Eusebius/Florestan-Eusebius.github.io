@@ -85,21 +85,24 @@ $$
 vanishes for $x^0<\left\|\vec{x}\right\|$ due to locality. Analytic function defined on the line segment $x^0<\left\|\vec{x}\right\|$ can be uniquely continued to lower half plane and upper half plane. Both correlators above and their continuation is now a single function
 
 $$
-\mathrm{i}G\left(x^0,\vec{x}\right)=\braket{0|T\left(\phi(x)\phi(0)\right)|0}
+\mathrm{i}F\left(x^0,\vec{x}\right)=\braket{0|T_\tau\left(\phi(x)\phi(0)\right)|0}
 $$
 
-with branch cut $x^0>\left\|\vec{x}\right\|$. Here the 'time ordered operator' $T$ is defined as 
+with branch cut $x^0>\left\|\vec{x}\right\|$. Here the 'time ordered operator' $T_\tau$ is defined as 
 
 $$
-T\left(A(x_1)B(x_2)\right)=\begin{cases}
+\begin{equation}
+    T_\tau\left(A(x_1)B(x_2)\right)=\begin{cases}
     A(x_1)B(x_2),\quad \operatorname{Im} x_1^0 < \operatorname{Im} x_2^0,\\ 
     \pm B(x_2)A(x_1),\quad \operatorname{Im} x_1^0 > \operatorname{Im} x_2^0.
 \end{cases}
+\label{def of T order}
+\end{equation}
 $$
 
-Note that 'time ordering' is actually an ordering of the imaginary part of time. 
+Note that the $F$ here is different from the so-called Green's function in which the ordering is imposed on real time. We shall explore the relationship between $F$ and the family of Green's functions in later sections.
 
-The analytical property of $G$ is demonstrated in Fig. 1. All correlators $\braket{0\|\phi(0)\phi(x)\|0}$, $\Braket{\phi(0)\phi\left(x^{\mathrm{E}}\right)}$, $\Braket{\phi\left(x^{\mathrm{E}}\right)\phi(0)}$ $\braket{0\|\phi(x)\phi(0)\|0}$ can be analytically continued to each other.
+The analytical property of $F$ as a function of $x^0$ is demonstrated in Fig. 1. All correlators $\braket{0\|\phi(0)\phi(x)\|0}$, $\Braket{\phi(0)\phi\left(x^{\mathrm{E}}\right)}$, $\Braket{\phi\left(x^{\mathrm{E}}\right)\phi(0)}$, $\braket{0\|\phi(x)\phi(0)\|0}$ can be analytically continued to each other.
 
 <figure><img src="/img/20221112/anaT0lor.jpeg" width="50%"><figcaption>Figure 1. Analytical property of two-point correlators for a Lorentz invariant system at zero temperature. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
 
@@ -139,14 +142,16 @@ The analytical property of $G$ is demonstrated in Fig. 1. All correlators $\brak
 
 For systems without Lorentz invariance, we cannot guarantee that there is a spacelike region and operators with spacelike separations (anti-)commute. As a result, correlators with different real time ordering may not be each other's analytic continuation. However, for systems with local interaction, there may be some 'emergent' light cone. Behaviour of commutators as a function of space and time is an interesting problem related to, for example, thermalization. 
 
-The observation that time ordering is actually the ordering of imaginary part coincides with the replacement $t\rightarrow\left(1-\mathrm{i}\epsilon\right)t$ in text-book path integral approach to quantum field theory: expectation values of operators ordered with respect to imaginary time converge, and that path integral gives us expectation values of operators ordered with respect to integration path, as a result of which if the imaginary time decreases along the path, the path integral gives the convergent expectation value automatically. With an understanding of how path integral gives the correct 'time ordered' expectation values, we are released from the constraint that only expectation values of (real) time ordered operators can be calculated. So long as we take an integration path that decreases in imaginary time, we can zigzag it in the real time direction as we like to calculate expectation values of any time ordering, especially the so-called out-of-time-ordered correlators (OTOC).
+### A comment on time ordering
+
+The ordering defined in Eq. ($\ref{def of T order}$) is required by convergence and hence must be obeyed. However, the ordering of real time is not a necessary requirement. This observation coincides with the replacement $t\rightarrow\left(1-\mathrm{i}\epsilon\right)t$ in text-book path integral approach to quantum field theory: expectation values of operators ordered with respect to imaginary time converge, and that path integral gives us expectation values of operators ordered with respect to integration path, as a result of which if the imaginary time decreases along the path, the path integral gives the convergent expectation value automatically. With an understanding of how path integral gives the correct 'time ordered' expectation values, we are released from the constraint that only expectation values of (real) time ordered operators can be calculated. So long as we take an integration path that decreases in imaginary time, we can zigzag it in the real time direction as we like to calculate expectation values of any time ordering, especially the so-called out-of-time-ordered correlators (OTOC).
 
 ### Finite temperature case
 
 Now consider finite temperature case where the thermal expectation value of the correlator is given by 
 
 $$
-F\left(x^0, \vec{x}\right) = Z^{-1} \operatorname{tr} \mathrm{e}^{-\beta H} \mathrm{e}^{\mathrm{i}H x^0} \phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i} H x^0} \phi\left(0\right), 
+D\left(x^0, \vec{x}\right) = Z^{-1} \operatorname{tr} \mathrm{e}^{-\beta H} \mathrm{e}^{\mathrm{i}H x^0} \phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i} H x^0} \phi\left(0\right), 
 $$ 
 
 where $\phi$ is in Schrödinger picture. For this expression to converge, we need 
@@ -158,7 +163,7 @@ $$
 Therefore we can analytically continue $x^0$ to the strip $-\beta < \operatorname{Im} x^0 < 0$. At $\operatorname{Im} x^0 = -\beta+0$, we have 
 
 $$
-F\left(x^0-\mathrm{i}\beta,\vec{x}\right)=Z^{-1}\operatorname{tr} \mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i}Hx^0}\mathrm{e}^{-\beta H}\phi\left(0\right)=Z^{-1}\operatorname{tr} \mathrm{e}^{-\beta H}\phi\left(0\right)\mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i}Hx^0},
+D\left(x^0-\mathrm{i}\beta,\vec{x}\right)=Z^{-1}\operatorname{tr} \mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i}Hx^0}\mathrm{e}^{-\beta H}\phi\left(0\right)=Z^{-1}\operatorname{tr} \mathrm{e}^{-\beta H}\phi\left(0\right)\mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i}Hx^0},
 $$
 
 which is the expectation value of products of the reversed ordering.
@@ -166,25 +171,25 @@ which is the expectation value of products of the reversed ordering.
 Note that our derivation here does not depend on whether the operator is local. Furthermore, unlike zero-temperature case, our result that reversing the ordering can be achived by analytic continuation is always true even though the two operators never commute. One can gain intuition about difference and similarity of zero and finite temperature cases by reconsider the correlator 
 
 $$
-\tilde{F}\left(x^0,\vec{x}\right)=\operatorname{tr} \mathrm{e}^{-\beta H}\phi\left(0\right)\mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i}Hx^0}=\operatorname{tr} \mathrm{e}^{-\left(\beta+\mathrm{i}x^0\right) H}\phi\left(0\right)\mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right).
+\tilde{D}\left(x^0,\vec{x}\right)=\operatorname{tr} \mathrm{e}^{-\beta H}\phi\left(0\right)\mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right) \mathrm{e}^{-\mathrm{i}Hx^0}=\operatorname{tr} \mathrm{e}^{-\left(\beta+\mathrm{i}x^0\right) H}\phi\left(0\right)\mathrm{e}^{\mathrm{i}Hx^0}\phi\left(\vec{x}\right).
 $$
 
 It converges in the strip $0<\operatorname{Im} x^0 <\beta$. It is the same as zero-temperature case that $x^0\pm 0$ ($x^0\in\mathbb{R}$) corresponds to different ordering of the correlators. However, one can check easily that 
 
 $$
-F\left(x^0-\mathrm{i}\tau,\vec{x}\right)=\tilde{F}\left(x^0+\mathrm{i}\left(\beta-\tau\right),\vec{x}\right).
+D\left(x^0-\mathrm{i}\tau,\vec{x}\right)=\tilde{D}\left(x^0+\mathrm{i}\left(\beta-\tau\right),\vec{x}\right).
 $$
 
 The imaginary axis coils so that the complex time is defined on a cylinder rather than a plane! Since we have defined $T$ as ordering with respect to imaginary time $\tau=-\operatorname{Im} x^0$, we can define 
 
 $$
 \begin{equation}
-G\left(x^0,\vec{x}\right)=-\Braket{T\left(\phi\left(x\right)\phi\left(0\right)\right)}_\beta,
+F\left(x^0,\vec{x}\right)=-\Braket{T_\tau\left(\phi\left(x\right)\phi\left(0\right)\right)}_\beta,
 \label{finite T green}    
 \end{equation}
 $$
 
-where $\braket{\cdot}_\beta = Z^{-1}\operatorname{tr}\left(\mathrm{e}^{-\beta H}\cdot\right)$. Obviously $G$ is an analytic function of $x^0$ on the complex cylinder except for (part of) the real axis. (Note that for Fermioic fields $G$ is anti-periodic in $\operatorname{Im} x^0$ since the definition in $G$ has a minus sign with revered ordering.) Here we say 'part of' since for Lorentz invariant systems the argument for zero-temperature system that $G$ can be analytically continued through a line segment on the real axis still makes sense. The analytic property of $G$ as a function of $x^0$ is shown in Fig. 2. The difference is that in zero temperature system, $\beta$ is infinite and we cannot 'wind' around the cylinder to reach a point slightly below the real axis from a point slightly above the real axis.
+where $\braket{\cdot}_\beta = Z^{-1}\operatorname{tr}\left(\mathrm{e}^{-\beta H}\cdot\right)$. Obviously $F$ is an analytic function of $x^0$ on the complex cylinder except for (part of) the real axis. (Note that for Fermioic fields $F$ is anti-periodic in $\operatorname{Im} x^0$ since the definition in $F$ has a minus sign with revered ordering.) Here we say 'part of' since for Lorentz invariant systems the argument for zero-temperature system that $F$ can be analytically continued through a line segment on the real axis still makes sense. The analytic property of $F$ as a function of $x^0$ is shown in Fig. 2. The difference is that in zero temperature system, $\beta$ is infinite and we cannot 'wind' around the cylinder to reach a point slightly below the real axis from a point slightly above the real axis.
 
 <figure><img src="/img/20221112/anaTfinlor.jpeg" width="50%"><figcaption>Figure 2. Analytical property of two-point correlators for a system with Lorentz invariance at finite temperature. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
 
@@ -212,6 +217,11 @@ F\left(t\right) = \operatorname{tr}\left(yVyW\left(t\right)yVyW\left(t\right)\ri
 > $$
 > 
 > The authors argued that the first line remains of order one while $F$ decrease exponentially with $t$ under a bound, which gives a bound for increasing of chaos.
+
+
+## Family of Green's functions
+
+### Zero-temperature case
 
 
 [^1]: Witten, E., 2018. Notes on Some Entanglement Properties of Quantum Field Theory. Rev. Mod. Phys. 90, 045003. [https://doi.org/10.1103/RevModPhys.90.045003](https://doi.org/10.1103/RevModPhys.90.045003).
