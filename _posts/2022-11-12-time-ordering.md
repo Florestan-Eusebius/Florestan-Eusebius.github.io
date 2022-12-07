@@ -104,7 +104,7 @@ Note that the $F$ here is different from the so-called Green's function in which
 
 The analytical property of $F$ as a function of $x^0$ is demonstrated in Fig. 1. All correlators $\braket{0\|\phi(0)\phi(x)\|0}$, $\Braket{\phi(0)\phi\left(x^{\mathrm{E}}\right)}$, $\Braket{\phi\left(x^{\mathrm{E}}\right)\phi(0)}$, $\braket{0\|\phi(x)\phi(0)\|0}$ can be analytically continued to each other.
 
-<figure><img src="/img/20221112/anaT0lor.jpeg" width="50%"><figcaption>Figure 1. Analytical property of two-point correlators for a Lorentz invariant system at zero temperature. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
+<figure><img src="/img/20221112/anaT0lor.jpeg" width="50%" margin-left="auto" margin-right="auto"/><figcaption>Figure 1. Analytical property of two-point correlators for a Lorentz invariant system at zero temperature. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
 
 > **Example: Lorentz invariant scalar field** 
 > 
