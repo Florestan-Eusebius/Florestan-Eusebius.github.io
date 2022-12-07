@@ -101,7 +101,7 @@ Note that 'time ordering' is actually an ordering of the imaginary part of time.
 
 The analytical property of $G$ is demonstrated in Fig. 1. All correlators $\braket{0\|\phi(0)\phi(x)\|0}$, $\Braket{\phi(0)\phi\left(x^{\mathrm{E}}\right)}$, $\Braket{\phi\left(x^{\mathrm{E}}\right)\phi(0)}$ $\braket{0\|\phi(x)\phi(0)\|0}$ can be analytically continued to each other.
 
-<figure><img src="/img/20221112/anaT0lor.jpeg" width="50%"><figcaption>Figure 1. Analytical property of two-point correlators. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
+<figure><img src="/img/20221112/anaT0lor.jpeg" width="50%"><figcaption>Figure 1. Analytical property of two-point correlators for a Lorentz invariant system at zero temperature. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
 
 > **Example: Lorentz invariant scalar field** 
 > 
@@ -186,7 +186,7 @@ $$
 
 where $\braket{\cdot}_\beta = Z^{-1}\operatorname{tr}\left(\mathrm{e}^{-\beta H}\cdot\right)$. Obviously $G$ is an analytic function of $x^0$ on the complex cylinder except for (part of) the real axis. (Note that for Fermioic fields $G$ is anti-periodic in $\operatorname{Im} x^0$ since the definition in $G$ has a minus sign with revered ordering.) Here we say 'part of' since for Lorentz invariant systems the argument for zero-temperature system that $G$ can be analytically continued through a line segment on the real axis still makes sense. The analytic property of $G$ as a function of $x^0$ is shown in Fig. 2. The difference is that in zero temperature system, $\beta$ is infinite and we cannot 'wind' around the cylinder to reach a point slightly below the real axis from a point slightly above the real axis.
 
-<figure><img src="/img/20221112/anaTfinlor.jpeg" width="50%"><figcaption>Figure 2. Analytical property of two-point correlators at finite temperature. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
+<figure><img src="/img/20221112/anaTfinlor.jpeg" width="50%"><figcaption>Figure 2. Analytical property of two-point correlators for a system with Lorentz invariance at finite temperature. Red arrows stands for analytic continuation while blue lines for branch cut. </figcaption></figure>
 
 Again, if one wants to calculate thermal expectation value of a product of a string of operators at different real time, she may first give each of their times an imaginary part $-\mathrm{i}\tau_1,-\mathrm{i}\tau_2,\ldots$ such that $\tau_1<\tau_2<\cdots$. Then she can choose a path, starting from $\operatorname{Im}x^0=-0$, winding around the complex cylinder for $x^0$ with $\operatorname{Im} x^0$ decreaing to $-\beta$, and traversing all the operators inserted on the cylinder by zigzagging in real time direction.
 
