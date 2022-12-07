@@ -20,7 +20,7 @@ mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js'
 在 `/_includes/markdown-enhancements/mathjax.html` 中写入如下配置
 
 ```html
-<script>
+{% raw %}<script>
 	MathJax = {
 	  tex: {
 		inlineMath: [['$', '$'], ['\\(', '\\)']],
@@ -30,29 +30,36 @@ mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js'
 </script>
 <script type="text/javascript" id="MathJax-script" async
 	src="{{ _sources.mathjax }}">
-</script>
+</script>{% endraw %}
 ```
 
 其中 `tags: ams` 表示对 `equation` 环境中的行内公式进行编号.
 
 ## 字体匹配
 
-MathJax 2 支持多种字体, 见[文档](https://docs.mathjax.org/en/latest/output/fonts.html?highlight=font#mathjax-font-support). 目前版本的 MathJax 3 只支持默认字体, 但其功能更为完善 (例如支持 `\ket{}` 等命令, 这对于物理学爱好者无疑具有很强的吸引力), 所以我们使用这一版本. MathJax 3 的默认字体大小和粗细都最接近 [MLModern 包](https://ctan.org/pkg/mlmodern?lang=en)提供的字体. 我们下载该字体的 ttf 文件后将其放在 `/_sass/font/` 文件夹中, 并在 `/_sass/common/_variables.scss` 中写入 
+MathJax 2 支持多种字体, 见[文档](https://docs.mathjax.org/en/latest/output/fonts.html?highlight=font#mathjax-font-support). 目前版本的 MathJax 3 只支持默认字体, 但其功能更为完善 (例如支持 `\ket{}` 等命令, 这对于物理学爱好者无疑具有很强的吸引力), 所以我们使用这一版本. MathJax 3 的默认字体大小和粗细都最接近 [MLModern 包](https://ctan.org/pkg/mlmodern?lang=en)提供的字体. 我们下载该字体的 ttf 文件后将其放在 `/_sass/font/` 文件夹中, 并在 `/_sass/layout/_page.scss` 中写入 
 
 ```scss
 @font-face {
   font-family: 'MLMRoman12';
-  src: url-loader("../font/mlmr12.ttf");
+  src: url("https://raw.githubusercontent.com/Florestan-Eusebius/Florestan-Eusebius.github.io/main/_sass/font/mlmr12.ttf");
   font-style: normal;
-  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'MLMRoman12';
+  src: url("https://raw.githubusercontent.com/Florestan-Eusebius/Florestan-Eusebius.github.io/main/_sass/font/mlmri12.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MLMRoman12';
+  src: url("https://raw.githubusercontent.com/Florestan-Eusebius/Florestan-Eusebius.github.io/main/_sass/font/mlmbx12.ttf");
+  font-weight: bold;
 }
 
 body {
   font-family: 'MLMRoman12', Georgia, "Songti SC";
-}
-
-h1, h2, h3 {
-  font-family: Verdana, Helvetica, sans-serif;
 }
 ```
 
