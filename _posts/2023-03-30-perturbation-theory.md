@@ -7,7 +7,7 @@ mathjax: true
 
 一个多体 Hamilton 量经常难以严格求解, 但一般来说, 凝聚态物理更关心基态附近一个较低能量范围内发生的事情. 实用的原因是凝聚态系统所处的温度往往低于系统内禀的其他能量尺度, 例如 Fermi 能; 理论上的原因是所谓 "低能有效理论" 往往能 "演生" 出一些新奇而普适的特性, 新奇是指和理论的微观构造没有明显的相似性, 普适是指对微观细节的依赖较少, 微观上截然不同的系统在大尺度下看来可能是相似的.
 
-
+<!--more-->
 
 人们一般所说的 "低能有效理论" 往往具有场论的形式, 它等价于如下 Hamilton 形式: 对于 Hamilton 量为 $H$ 的系统, 取能量截断 $\Lambda$; $H$ 可以按本征值展开为
 
@@ -166,7 +166,9 @@ $$
 > 则 $\tilde{\Pi}_ -\tilde{H}\tilde{\Pi}_ -$ 的第 $j$ 个本征值 $\tilde{\lambda}_ j$ 和 $H_ {\mathrm{eff}}$ 的第 $j$ 个本征值最多相差 $\epsilon$.
 
 证明如下: 根据定理条件, 对于任意 $z\in[c-\epsilon,d+\epsilon]$, $\Sigma\left(z\right)$ 的本征值也落在 $[c-\epsilon,d+\epsilon]$ 中. 根据单调性, 当 $z<\Lambda$ 但处在上述区间之外时, $z$ 不会是 $\Sigma_ -\left(z\right)$ 的本征值. 因此根据引理 2, $\tilde{\Pi}_ -\tilde{H}\tilde{\Pi}_ -$ 的本征值也落在区间 $[c-\epsilon,d+\epsilon]$ 内. 再根据引理 3, 
+
 $$
 \left\lvert\lambda_j\left(\tilde{\Pi}_ -\tilde{H}\tilde{\Pi}_ -\right)-\lambda_j\left(H_{\mathrm{eff}}\right)\right\rvert=\left\lvert\lambda_j\left(\Sigma_ -\left(\lambda_j\left(\tilde{\Pi}_ -\tilde{H}\tilde{\Pi}_ -\right)\right)\right)-\lambda_j\left(H_{\mathrm{eff}}\right)\right\rvert\leq \epsilon,
 $$
+
 证毕.
