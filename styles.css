@@ -1,0 +1,118 @@
+body {
+    font-family: 'Noto Serif SC', serif;
+    background-color: #f7f5f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.outer_container {
+    width: 800px;
+    max-width: 80vw;
+    box-sizing: border-box;
+    position: relative;
+}
+.outer_container::before,
+.outer_container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #a43820;
+}
+.outer_container::before {
+    left: 0;
+    width: 3px;
+}
+.outer_container::after {
+    right: 0;
+    width: 3px;
+}
+.container {
+    /* width: 800px;
+    max-width: 80vw; */
+    /* padding-top: -20px; */
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #a43820;
+}
+.container::before {
+    left: 0;
+    width: 1px;
+}
+.container::after {
+    right: 0;
+    width: 1px;
+}
+header {
+    background-color: #a43820;
+    color: #fff;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.buttons-container {
+    background-color: #c05030;
+    padding: 5px 0;
+}
+.button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #c05030;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+section{
+    padding: 15px;
+}
+h2{
+    font-family: "Noto Sans SC", sans-serif;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: solid 1px #9e2f2f;
+}
+
+.scroll-container {
+    background-color: #c2bfbf;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+  
+.scroll-container img {
+    padding: 3px;
+    height: fit-content;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    .outer_container {
+        max-width: none;
+        width: 100%;
+    }
+    .outer_container::before,
+    .outer_container::after {
+        display: none;
+    }
+}
