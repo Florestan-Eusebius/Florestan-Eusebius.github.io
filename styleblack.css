@@ -17,10 +17,10 @@ body {
     height:100%;
     position: relative;
     /* background-repeat: no-repeat, no-repeat;  */
-    background-image: url("bk.jpg");
+    /* background-image: url("bk.jpg"); */
     background-size: 50vw;
     background-position: left;
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
     margin: 0;
     padding: 0;
     display: flex;
