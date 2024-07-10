@@ -3,34 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Wang Yifei Website</title>
+    <link rel="stylesheet" href="styleblack.css">
 </head>
 <body>
-    <div class="outer_container">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav" id="myTopnav">
+            <div class="nav-container">
+                <div class="left-container">
+                    <a href="#top"><img src = "icon.svg" alt="主页" width="30px" height="30px"/></a>
+                </div>
+                <div class="right-container">
+                    <a href="#research" class="right">Research</a>
+                    <a href="#experience" class="right">Résumé</a>
+                    <a href="notes.html" class="right">Notes</a>
+                    <a href="https://florestan-eusebius.github.io/blog" class="right">Blog</a>
+                    <a href="index.html" class="right">漢语</a>
+                </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
         <header>
-            <h1>Wang Yi-Fei's Homepage
-            </h1>
-            <div class="buttons-container">
-                <a href="cv.html" class="button">Detailed CV</a>
-                <a href="about.html" class="button">Academic Notes</a>
-                <a href="https://florestan-eusebius.github.io/blog" class="button">Blog</a>
-                <a href="index.html" class="button">汉语</a>
+            <div class="h1-container">
+                <h1>Wang Yit-Fei's Personal Website</h1>
+                <h2>Quantum information, cold atoms, statistical physics, condensed matter physics and others</h2>
             </div>
         </header>
-        <div class="container">
-            <section>
-                <h2>一些</h2>
-                <p>PhD Students in Institute for Advanced Study, Tsinghua University </p>
+    <div class="outer_container">
+            <section id="research">
+                <h2>Research</h2>
+                <p>我的研究尚处于起步阶段，但似乎已经有了一些自己的品味和兴趣。我的入学时的专业是凝聚态理论，但我现在主要关注的领域还是容错量子计算的理论和容错量子计算机的物理实现。</p>
+                <p>在容错量子计算的理论方面，我比较关心纠错码的问题。一方面，我希望理解一些近期提出的纠错码和纠错算法在有限大情况下的纠错能力如何，另一方面，我希望从统计物理和信息论的角度理解纠错码的若干性质，并且希望这种视角能给我们带来新的启发。</p>
+                <p>在容错量子计算机的物理实现方面，我主要关心中性原子系统，辅以光学微腔。我认为这类系统至少在短期有明显优势，因此希望能在这样的系统中制造出真正的容错量子计算机。当然我不从事实验工作，但我希望能在方案选择、原理验证、结合具体平台的优化等方面做一些具体但使用的工作。</p>
+                <p>我的兴趣不限于上述领域。很多相关的量子信息、量子模拟有关的问题我都希望能有所理解，例如投影层析、多体模拟的新方案、量子动力学等。</p>
+                <p>我对这些领域发生兴趣的原因在于，我认为近些年实验物理最重要的进展，就是人们借助光和原子的系统，实现了量子自由度的精确调控。这和散射实验、输运实验有着本质的不同。对量子自由度的精确调控让我们有可能可控地探究介于极少体和热力学极限之间的物理，让我们有可能可控地探究远离热平衡态的物理，让我们有可能可控地探究高度纠缠的物理。这是物理学内部的动机。物理学外部，抛开显而易见的密码学不论，容错量子计算机将使我们有足够的动机和能力去探究基于量子的信息论、逻辑学甚至语言（哲）学，也许会让我们对信息的理解发生重要的变化。这方面理论计算机背景的学者正在做出非常重要的工作：他们精确地描述了我们能做什么、不能做什么。我也希望能对这些工作有所了解。</p>
+            </section>
+            <section id="experience">
+                <h2>Résumé</h2>
+                <ul>
+                    <li>2006-2012 年，西安市临潼区陕缝学校，小学。</li>
+                    <li>2012-2018 年，陕西师范大学附属中学，初中和高中。</li>
+                    <li>2018-2022 年，北京大学物理学院，物理学。</li>
+                    <ul>
+                        <li>2020-2022 年，在信息科学技术学院电子系 CAP 组从事研究工作，导师为陈徐宗教授。主要关心基于光晶格中超冷玻色系统的量子模拟，旨在为组内实验工作提供数值和理论支持。</li>
+                    </ul>
+                    <li>2022 至今，清华大学高等研究院，凝聚态理论。导师为顾颖飞研究员。</li>
+                </ul>
             </section>
             <section>
-                <h2>我的作品</h2>
-                <p>這裡展示一些我的作品...</p>
+                <h2>Others</h2>
+                
             </section>
-        </div>
-            <footer>
-                <p>版權所有 © 2023</p>
-            </footer>
     </div>
+    <footer>
+        <div class="footer-container">
+        <p>Email：wang_yff[AT]outlook.com <br>
+            GitHub：<a href="https://github.com/Florestan-Eusebius" style="color: white;">Florestan-Eusebius</a><br> 
+            Zhihu：<a href="https://www.zhihu.com/people/wang-yi-fei-54-67" style="color: white;">Schroenberg</a></p>
+        </div>
+    </footer>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
 </body>
 </html>
