@@ -11,11 +11,13 @@
         <div class="topnav" id="myTopnav">
             <div class="nav-container">
                 <div class="left-container">
-                    <a href="#top"><img src = "icon.svg" alt="主页" width="30px" height="30px"/></a>
+                    <a href="#top"><img src = "icon.svg" alt="主页" style='vertical-align:bottom; width: 30px;'/> Fei's Website </a>
+
                 </div>
                 <div class="right-container">
                     <a href="#research" class="right">Research</a>
                     <a href="#experience" class="right">Résumé</a>
+                    <a href="#publication" class="right">Publications</a>
                     <a href="notes.html" class="right">Notes</a>
                     <a href="https://florestan-eusebius.github.io/blog" class="right">Blog</a>
                     <a href="index.html" class="right">漢语</a>
@@ -31,39 +33,70 @@
                 <h2>Quantum information, cold atoms, statistical physics, condensed matter physics and others</h2>
             </div>
         </header>
-    <div class="outer_container">
-            <section id="research">
-                <h2>Research</h2>
-                <p>我的研究尚处于起步阶段，但似乎已经有了一些自己的品味和兴趣。我的入学时的专业是凝聚态理论，但我现在主要关注的领域还是容错量子计算的理论和容错量子计算机的物理实现。</p>
-                <p>在容错量子计算的理论方面，我比较关心纠错码的问题。一方面，我希望理解一些近期提出的纠错码和纠错算法在有限大情况下的纠错能力如何，另一方面，我希望从统计物理和信息论的角度理解纠错码的若干性质，并且希望这种视角能给我们带来新的启发。</p>
-                <p>在容错量子计算机的物理实现方面，我主要关心中性原子系统，辅以光学微腔。我认为这类系统至少在短期有明显优势，因此希望能在这样的系统中制造出真正的容错量子计算机。当然我不从事实验工作，但我希望能在方案选择、原理验证、结合具体平台的优化等方面做一些具体但使用的工作。</p>
-                <p>我的兴趣不限于上述领域。很多相关的量子信息、量子模拟有关的问题我都希望能有所理解，例如投影层析、多体模拟的新方案、量子动力学等。</p>
-                <p>我对这些领域发生兴趣的原因在于，我认为近些年实验物理最重要的进展，就是人们借助光和原子的系统，实现了量子自由度的精确调控。这和散射实验、输运实验有着本质的不同。对量子自由度的精确调控让我们有可能可控地探究介于极少体和热力学极限之间的物理，让我们有可能可控地探究远离热平衡态的物理，让我们有可能可控地探究高度纠缠的物理。这是物理学内部的动机。物理学外部，抛开显而易见的密码学不论，容错量子计算机将使我们有足够的动机和能力去探究基于量子的信息论、逻辑学甚至语言（哲）学，也许会让我们对信息的理解发生重要的变化。这方面理论计算机背景的学者正在做出非常重要的工作：他们精确地描述了我们能做什么、不能做什么。我也希望能对这些工作有所了解。</p>
-            </section>
-            <section id="experience">
-                <h2>Résumé</h2>
+        <section>
+            <div class="column right"> 
+                <img src="avatar.JPG" style="display: block; margin-left: auto; margin-right: auto; width: 80%; border-radius: 50%;">
+                <!-- <p> </p>   -->
+                <p style="font-size: x-large; font-weight: bold; text-align: center; padding-top: 1em;">
+                    Wang Yit-Fei
+                </p>
+                <p style="font-size: large; color:slategray; text-align: center;">
+                    PhD candidate in theoretical physics<br>
+                    Institute for Advanced Study, Tsinghua University
+                </p>
+                <p style="font-size: x-large; color:slategray; text-align: center;">
+                    <a href="mailto:wang_yff@outlook.com" class="fa fa-envelope" style="color:rgb(66, 79, 92);"></a>
+                    <a href="https://github.com/Florestan-Eusebius" class="fa fa-github" style="color:rgb(66, 79, 92);"></a>
+                </p>
+            </div>
+            <div class="column left"> 
+                <h2> About Me </h2>
+                <p>
+                    I am a PhD student majoring in theoretical physics in Institute for Advanced Study, Tsinghua University. My interests include quantum information and quantum computation, cold atomic physics and condensed matter physics. My two major academic goals are realizing fault-tolerant quantum computation on cold atomic platforms, and understanding more about quantum information.
+                </p>
+                <p>
+                    I love music. I like to listening to classical music, especially Beethoven and Brahms. I also play the piano and sing a little. Learning languages is also enjoyable to me. I am learning French and Japanese, and planning to learn Latin and Arabic later. Another hobby of mine is the so-called "minor subject", including historical phonology and philology of Chinese language. Most of the time, I relax myself by reading literature and history.
+                </p>
+                <p>
+                    My name is pronounced as /wɑŋ<sup>35</sup>i<sup>51</sup>fei<sup>55</sup>/ in Mandarin. The "t" in "Yit" is the coda that existed in medieval Chinese, which I added to lift the degeneracy.
+                </p>
+            </div>
+        </section>
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>To be translated.</p>
+            <p>我的研究尚处于起步阶段，但似乎已经有了一些自己的品味和兴趣。我的入学时的专业是凝聚态理论，但现在主要关注的领域还是量子信息理论和容错量子计算机的物理实现。</p>
+            <p>在量子信息理论方面，我希望理解量子低密度奇偶校验码的容错性质，包括容错逻辑门、实用纠错算法、纠错阈值等问题，希望与凝聚态、统计物理的交叉能为量子纠错码本身带来新的创见。另一类我关心的问题是玻色编码和量子比特、高维量子比特编码之间的转化问题。</p>
+            <p>在容错量子计算机的物理实现方面，我主要关心中性原子系统，辅以光学微腔。我认为这类系统至少在短期有明显优势，因此希望能在这样的系统中制造出真正的容错量子计算机。虽然我不从事实验工作，但我希望能在方案选择、原理验证、结合具体平台的优化等方面做一些具体但实用的工作。这方面的一个尝试参见<a href="#pub2312">这篇论文</a>。</p>
+            <p>在上述我试图工作的具体方向之外，我也希望探索更广阔的量子信息理论，包括复杂性理论、量子资源理论、量子机器学习等；也希望了解更多有趣的量子模拟方案及其背后的物理问题。我对凝聚态、场论、引力和宇宙学也保持着探索的欲望，虽然暂时无从下手，但这毕竟是梦开始的地方。</p>
+        </section>
+        
+        <section id="experience">
+            <h2>Résumé</h2>
+            <ul>
+                <li>2006-2012, Shaanfeng School, Lintong District, Xi'an. Primary school.</li>
+                <li>2012-2018, The High School Affiliated to Shaanxi Normal University. Junior and senior high school.</li>
+                <li>2018-2022, Schoold of Physics, Peking University. Bachelor of Science in physics.</li>
                 <ul>
-                    <li>2006-2012 年，西安市临潼区陕缝学校，小学。</li>
-                    <li>2012-2018 年，陕西师范大学附属中学，初中和高中。</li>
-                    <li>2018-2022 年，北京大学物理学院，物理学。</li>
-                    <ul>
-                        <li>2020-2022 年，在信息科学技术学院电子系 CAP 组从事研究工作，导师为陈徐宗教授。主要关心基于光晶格中超冷玻色系统的量子模拟，旨在为组内实验工作提供数值和理论支持。</li>
-                    </ul>
-                    <li>2022 至今，清华大学高等研究院，凝聚态理论。导师为顾颖飞研究员。</li>
+                    <li>2020-2022, research in the CAP group in Institute of Quantum Electronics, advised by Prof. Xuzong Chen, mainly on quantum simulation based on cold atomic systems in optical lattices, supporting the experimentalists in the group through numerical and theoretical works. </li>
+                    <li>2022, undergraduate thesis <a href="2022_Peking_University_Undergraduate_Thesis.pdf"><i>Quantum Simulation of Lattice Gauge Theory</i></a> (in Chinese), Advised by Prof. Xuzong Chen and Prof. Xiongjun Liu. This should be viewed as a review with a little derivation and numerical results done by myself.</li>
                 </ul>
-            </section>
-            <section>
-                <h2>Others</h2>
-                
-            </section>
+                <li>2022-now, Institute for Advanced Study, Tsinghua University. Condensed matter theory. Advised by Prof. Yingfei Gu.</li>
+            </ul>
+        </section>
+        
+    
+        <section id="publication">
+            <h2>Publications</h2>    
+            <ul>
+                <li id="pub2312"><b>WYF</b>, Yixu Wang, Yu-An Chen, Wenjun Zhang, Tao Zhang, Jiazhong Hu, Wenlan Chen, Yingfei Gu, and Zi-Wen Liu. "Efficient fault-tolerant implementations of non-Clifford gates with reconfigurable atom arrays." <a href="https://arxiv.org/abs/2312.09111"><i> arXiv preprint arXiv:2312.09111</i> (2023)</a>.</li>
+            </ul>
+        </section>
+<footer>
+    <div class="footer-container">
+    <p>© Wang Yit-Fei 2024, published with <a href="https://pages.github.com">Github Pages</a>.</p>
     </div>
-    <footer>
-        <div class="footer-container">
-        <p>Email：wang_yff[AT]outlook.com <br>
-            GitHub：<a href="https://github.com/Florestan-Eusebius" style="color: white;">Florestan-Eusebius</a><br> 
-            Zhihu：<a href="https://www.zhihu.com/people/wang-yi-fei-54-67" style="color: white;">Schroenberg</a></p>
-        </div>
-    </footer>
+</footer>
 
 <script>
     function myFunction() {

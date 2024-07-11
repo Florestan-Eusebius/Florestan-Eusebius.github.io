@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/a2888fa138.js" crossorigin="anonymous"></script> -->
     <title>Wang Yifei Website</title>
     <link rel="stylesheet" href="styleblack.css">
 </head>
 <body>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <div class="topnav" id="myTopnav">
             <div class="nav-container">
                 <div class="left-container">
-                    <a href="#top"><img src = "icon.svg" alt="主页" width="30px" height="30px"/></a>
+                    <a href="#top"><img src = "icon.svg" alt="主页" style='vertical-align:bottom; width: 30px;'/> 飞飞的个人主页 </a>
                 </div>
                 <div class="right-container">
                     <a href="#research" class="right">研究兴趣</a>
                     <a href="#experience" class="right">个人履历</a>
+                    <a href="#publication" class="right">学术论文</a>
                     <a href="notes.html" class="right">学术笔记</a>
                     <a href="https://florestan-eusebius.github.io/blog" class="right">博客</a>
                     <a href="indexen.html" class="right">English</a>
@@ -27,44 +29,72 @@
         </div>
         <header>
             <div class="h1-container">
-                <h1>王逸飞的个人主页</h1>
+                <h1>飞飞的个人主页</h1>
                 <h2>量子信息、冷原子、统计物理、凝聚态及杂七杂八</h2>
             </div>
         </header>
-    <div class="outer_container">
+
+        <section>
+            <div class="column right"> 
+                <img src="avatar.JPG" style="display: block; margin-left: auto; margin-right: auto; width: 80%; border-radius: 50%;">
+                <!-- <p> </p>   -->
+                <p style="font-size: x-large; font-weight: bold; text-align: center; padding-top: 1em;">
+                    王逸飞
+                </p>
+                <p style="font-size: large; color:slategray; text-align: center;">
+                    理论物理学博士研究生<br>
+                    清华大学高等研究院
+                </p>
+                <p style="font-size: x-large; color:slategray; text-align: center;">
+                    <a href="mailto:wang_yff@outlook.com" class="fa fa-envelope" style="color:rgb(66, 79, 92);"></a>
+                    <a href="https://github.com/Florestan-Eusebius" class="fa fa-github" style="color:rgb(66, 79, 92);"></a>
+                </p>
+            </div>
+            <div class="column left"> 
+                <h2> 个人简介 </h2>
+                <p>
+                    我当前在清华大学高等研究院攻读博士学位，专业为理论物理学。我的研究兴趣包括量子信息和量子计算、冷原子物理和凝聚态理论。概而言之，我的学术目标有二：一是在冷原子体系中实现容错量子计算，二是理论上更深入地理解量子信息。
+                </p>
+                <p>
+                    我喜欢音乐，喜欢听古典音乐，尤其是贝多芬和勃拉姆斯；也喜欢弹钢琴和唱歌。我喜欢学语言，在较为认真地学习法语和日语，对阿拉伯语、拉丁语等也有兴趣，计划日后学习。我喜欢所谓「小学」者，即文字、音韵一类的学问。阅读文学和历史是我最经常的消遣。
+                </p>
+                <p>我得名于李白诗「俱怀逸兴壮思飞，欲上青天揽明月」。我将姓名的拉丁转写定为 Wang Yit-Fei，与汉语拼音略有不同，这是引入了中古「逸」字的入声韵尾以去简并。「飞」未采用中古音，以其对多数现代中国和欧美人都稍显拗口。</p>
+            </div>
+            
+        </section>
+        
             <section id="research">
                 <h2>研究兴趣</h2>
-                <p>我的研究尚处于起步阶段，但似乎已经有了一些自己的品味和兴趣。我的入学时的专业是凝聚态理论，但我现在主要关注的领域还是容错量子计算的理论和容错量子计算机的物理实现。</p>
-                <p>在容错量子计算的理论方面，我主要关心纠错码的问题。一方面，我希望理解一些近期提出的纠错码和纠错算法在有限大情况下的纠错能力如何，另一方面，我希望从统计物理和信息论的角度理解纠错码的若干性质，并且希望这种视角能给我们带来新的启发。</p>
-                <p>在容错量子计算机的物理实现方面，我主要关心中性原子系统，辅以光学微腔。我认为这类系统至少在短期有明显优势，因此希望能在这样的系统中制造出真正的容错量子计算机。当然我不从事实验工作，但我希望能在方案选择、原理验证、结合具体平台的优化等方面做一些具体但使用的工作。</p>
-                <p>我的兴趣不限于上述领域。很多相关的量子信息、量子模拟有关的问题我都希望能有所理解，例如投影层析、多体模拟的新方案、量子动力学等。</p>
-                <p>我对这些领域发生兴趣的原因在于，我认为近些年实验物理最重要的进展，就是人们借助光和原子的系统，实现了量子自由度的精确调控。这和散射实验、输运实验有着本质的不同。对量子自由度的精确调控让我们有可能可控地探究介于极少体和热力学极限之间的物理，让我们有可能可控地探究远离热平衡态的物理，让我们有可能可控地探究高度纠缠的物理。这是物理学内部的动机。物理学外部，抛开显而易见的密码学不论，容错量子计算机将使我们有足够的动机和能力去探究基于量子的信息论、逻辑学甚至语言（哲）学，也许会让我们对信息的理解发生重要的变化。这方面理论计算机背景的学者正在做出非常重要的工作：他们精确地描述了我们能做什么、不能做什么。我也希望能对这些工作有所了解。</p>
+                <p>我的研究尚处于起步阶段，但似乎已经有了一些自己的品味和兴趣。我的入学时的专业是凝聚态理论，但现在主要关注的领域还是量子信息理论和容错量子计算机的物理实现。</p>
+                <p>在量子信息理论方面，我希望理解量子低密度奇偶校验码的容错性质，包括容错逻辑门、实用纠错算法、纠错阈值等问题，希望与凝聚态、统计物理的交叉能为量子纠错码本身带来新的创见。另一类我关心的问题是玻色编码和量子比特、高维量子比特编码之间的转化问题。</p>
+                <p>在容错量子计算机的物理实现方面，我主要关心中性原子系统，辅以光学微腔。我认为这类系统至少在短期有明显优势，因此希望能在这样的系统中制造出真正的容错量子计算机。虽然我不从事实验工作，但我希望能在方案选择、原理验证、结合具体平台的优化等方面做一些具体但实用的工作。这方面的一个尝试参见<a href="#pub2312">这篇论文</a>。</p>
+                <p>在上述我试图工作的具体方向之外，我也希望探索更广阔的量子信息理论，包括复杂性理论、量子资源理论、量子机器学习等；也希望了解更多有趣的量子模拟方案及其背后的物理问题。我对凝聚态、场论、引力和宇宙学也保持着探索的欲望，虽然暂时无从下手，但这毕竟是梦开始的地方。</p>
             </section>
+            
             <section id="experience">
                 <h2>个人履历</h2>
                 <ul>
-                    <li>2006-2012 年，西安市临潼区陕缝学校，小学。</li>
+                    <li>  2006-2012 年，西安市临潼区陕缝学校，小学。</li>
                     <li>2012-2018 年，陕西师范大学附属中学，初中和高中。</li>
                     <li>2018-2022 年，北京大学物理学院，物理学。</li>
                     <ul>
-                        <li>2020-2022 年，在信息科学技术学院电子系 CAP 组从事研究工作，导师为陈徐宗教授。主要关心基于光晶格中超冷玻色系统的量子模拟，旨在为组内实验工作提供数值和理论支持。</li>
+                        <li>2020-2022 年，在量子电子所 CAP 组从事研究工作，导师为陈徐宗教授。主要关心基于光晶格中超冷玻色系统的量子模拟，旨在为组内实验工作提供数值和理论支持。</li>
+                        <li>2022 年完成本科毕业论文<a href="2022_Peking_University_Undergraduate_Thesis.pdf">《格点规范理论的量子模拟》</a>，指导老师为陈徐宗教授和刘雄军教授。这是一篇学习笔记，主要属综述性质，包含了少量自己的推导和数值结果。</li>
                     </ul>
                     <li>2022 至今，清华大学高等研究院，凝聚态理论。导师为顾颖飞研究员。</li>
                 </ul>
             </section>
-            <section>
-                <h2>其他</h2>
-                
+            
+        
+            <section id="publication">
+                <h2>学术论文</h2>    
+                <ul>
+                    <li id="pub2312"><b>WYF</b>, Yixu Wang, Yu-An Chen, Wenjun Zhang, Tao Zhang, Jiazhong Hu, Wenlan Chen, Yingfei Gu, and Zi-Wen Liu. "Efficient fault-tolerant implementations of non-Clifford gates with reconfigurable atom arrays." <a href="https://arxiv.org/abs/2312.09111"><i> arXiv preprint arXiv:2312.09111</i> (2023)</a>.</li>
+                </ul>
             </section>
-            <section>
-                <h2>关于此页面</h2>
-            </section>
-    </div>
     <footer>
         <div class="footer-container">
-        <p>邮箱：wang_yff[AT]outlook.com <br>
-            GitHub：<a href="https://github.com/Florestan-Eusebius" style="color: white;">Florestan-Eusebius</a><br> 
-            知乎：<a href="https://www.zhihu.com/people/wang-yi-fei-54-67" style="color: white;">Schroenberg</a></p>
+        <p>© 王逸飞 2024，本页面借由 <a href="https://pages.github.com">Github Pages</a> 发布。</p>
         </div>
     </footer>
 

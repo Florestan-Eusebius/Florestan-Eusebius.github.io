@@ -12,6 +12,10 @@ body {
     align-items: center;
 }
 
+a:link, a:visited {
+    color:inherit;
+ }
+
 /* Navigation bar */
 .topnav {
     overflow: hidden;
@@ -25,8 +29,9 @@ body {
   }
 
   .nav-container {
-    width: 800px;
-    max-width: 80vw;
+    width: 100%;
+    /* width: 800px; */
+    /* max-width: 80vw; */
     box-sizing: border-box;
     position: relative;
     flex-direction: column;
@@ -46,9 +51,9 @@ body {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 0px;
+    padding: 20px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   .topnav a:hover {
@@ -58,8 +63,10 @@ body {
 
   .topnav a.right {
     float: left;
-    padding: 20px 16px;
+    padding: 23px 16px 20px;
     color: white;
+    font-size: 17px;
+
   }
 
   .topnav .icon {
@@ -73,7 +80,7 @@ body {
 
 header {
     /* background-color: rgba(91, 90, 90, 0.9); */
-    background-image: url("bk_bb.jpg");
+    background-image: url("bk_bb_1.jpg");
     background-size:     cover;
     color: #fff;
     display: flex;
@@ -93,7 +100,7 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 5;
+    z-index: 6;
 }
 
 
@@ -111,19 +118,51 @@ header h2{
     text-align: center;
 }
 
-.outer_container {
+.section-container-a {
+    /* width: 800px;
+    max-width: 80vw;
+    box-sizing: border-box;
+    position: relative;
+    top: 10px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(255, 255, 255, 0.8);
+    /* box-shadow: 10px 5px 5px red; */
+    z-index: 5;
+    /* border: solid #202020; */
+}
+
+.section-container-b {
+    /* width: 800px;
+    max-width: 80vw;
+    box-sizing: border-box;
+    position: relative;
+    top: 10px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(239, 239, 239, 0.8);
+    z-index: 5;
+    /* border: solid #202020; */
+}
+
+
+
+section{
     width: 800px;
     max-width: 80vw;
     box-sizing: border-box;
     position: relative;
     top: 10px;
-    background:rgba(255, 255, 255, 0.8);
+    /* bottom: 100px; */
+    /* background:rgba(255, 255, 255, 0.8); */
     z-index: 5;
-    /* border: solid #202020; */
-}
-
-section{
-    padding: 15px;
+    padding: 25px;
+    /* box-shadow: 10px 5px 5px rgb(218, 218, 218); */
+    /* border-radius: 15px; */
 }
 
 
@@ -131,8 +170,28 @@ section h2{
     font-family: "Noto Sans SC", sans-serif;
     padding-bottom: 8px;
     margin-bottom: 8px;
-    border-bottom: solid 1px #000000;
+    font-size: xx-large;
+    /* border-bottom: solid 1px #000000; */
 }
+
+.column {
+    float: right;
+    /* padding: 10px; */
+  }
+  .column.left{
+    width: 60%;
+  }
+  .column.right{
+    width: 40%;
+  }
+  .column p{
+    margin: 10px 0 0 0;
+  }
+  .column a{
+    text-decoration: none;
+  }
+
+
 
 .scroll-container {
     background-color: #c2bfbf;
@@ -149,29 +208,30 @@ section h2{
 footer {
     background-color: #333;
     color: #fff;
-    font-size: small;
     width: 100%;
     box-sizing: border-box;
-    top: 20px;
+    /* top: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    top: 50px;
     z-index: 5;
 }
 
 .footer-container{
     width: 800px;
     max-width: 80vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-sizing: border-box;
     position: relative;
+    text-align: center;
     z-index: 5;
 }
 
 @media screen and (max-width: 768px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a.right {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
@@ -185,7 +245,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: fixed;
+        /* display: block; */
+    }
     .topnav.responsive .icon {
         position: absolute;
         right: 10px;
@@ -196,14 +259,22 @@ footer {
         display: block;
         text-align: left;
     }
+    .topnav.responsive .left-container {
+        /* width: 100%; */
+        float: left;
+      }
+    .topnav.responsive .right-container {
+        width: 100%;
+        float: left;
+      }
 }
 
 @media screen and (max-width: 768px) {
-    .outer_container {
+    section {
         max-width: none;
         width: 100%;
     }
-    
+
     .h1-container,.footer-container {
         margin-left: 20px;
     }
@@ -211,4 +282,10 @@ footer {
     .outer_container::after {
         display: none;
     }
+}
+
+@media screen and (max-width: 600px) {
+.column.left, .column.right {
+    width: 100%;
+  }
 }
