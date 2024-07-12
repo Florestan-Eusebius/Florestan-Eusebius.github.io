@@ -11,15 +11,13 @@
         <div class="topnav" id="myTopnav">
             <div class="nav-container">
                 <div class="left-container">
-                    <a href="index.html"><img src = "icon.svg" alt="主页" style='vertical-align:bottom; width: 30px;'/> 飞飞的个人主页 </a>
+                    <a href="index.html"><img src = "icon.svg" alt="主页" style='vertical-align:bottom; width: 30px;'/> 飞飞的学术笔记 </a>
                 </div>
                 <div class="right-container">
-                    <a href="#research" class="right">Research</a>
-                    <a href="#experience" class="right">Résumé</a>
-                    <a href="#publication" class="right">Publications</a>
-                    <a href="notes.html" class="right">Notes</a>
+                    <a href="#Long_notes" class="right">Long notes</a>
+                    <a href="#Academic_diaries" class="right">Academic diaries</a>
                     <a href="https://florestan-eusebius.github.io/blog" class="right">Blog</a>
-                    <a href="index.html" class="right">漢语</a>
+                    <a href="index.html" class="right">主页</a>
                 </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -33,31 +31,33 @@
             </div>
         </header>
 
-        <section id="Long notes">
+        <section id="Long_notes">
             <h2>Long notes</h2>
-            These are notes on a 
+            <p>These are relatively complete notes on their topics.</p>
         </section>
 
-        <section id="Academic diaries">
+        <section id="Academic_diaries">
             <h2>Academic diaries</h2>
+            <p>These are notes of an everyday style on some small topics, such as some notions, theorems, formulae, techniques et al.</p>
+            <a href="notes/240709-radon.pdf" class="notecard">
+                <div class="card">
+                    <h3>Radon transformation</h3>
+                    <p>July 9, 2024</p>
+                </div>
+            </a>
+            <a href="notes/240414-inputoutput.pdf" class="notecard">
+                <div class="card">
+                    <h3>输入输出理论</h3>
+                    <p>2024 年 4 月 14 日</p>
+                </div>
+            </a>
         </section>
         
-<footer>
-    <div class="footer-container">
-    <p>© Wang Yit-Fei 2024, published with <a href="https://pages.github.com">Github Pages</a>.</p>
-    </div>
-</footer>
-
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-</script>
-
-</body>
+        <footer>
+            <div class="footer-container">
+            <p>© Wang Yit-Fei 2024, published with <a href="https://pages.github.com">Github Pages</a>.</p>
+            </div>
+        </footer>
+        
+    </body>
 </html>
