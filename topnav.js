@@ -17,13 +17,26 @@ function myFunction() {
 //   event.stopPropagation()
 // }
 
-window.addEventListener("click", function(event){
+// window.addEventListener("click", function(event){
+//   if (document.getElementsByClassName('icon')[0].contains(event.target)) {
+//         myFunction();
+//       } else {
+//         var x = document.getElementById("myTopnav");
+//         x.className = "topnav";
+//       }
+//       event.stopPropagation()
+// });
+
+function handleEvent(event) {
   if (document.getElementsByClassName('icon')[0].contains(event.target)) {
-        myFunction();
-      } else {
-        var x = document.getElementById("myTopnav");
-        x.className = "topnav";
-      }
-      event.stopPropagation()
-});
+    myFunction();
+  } else {
+    var x = document.getElementById("myTopnav");
+    x.className = "topnav";
+  }
+  event.stopPropagation();
+}
+
+window.addEventListener('click', handleEvent);
+window.addEventListener('touchstart', handleEvent);
 
