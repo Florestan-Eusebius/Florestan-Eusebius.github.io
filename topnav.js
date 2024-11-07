@@ -40,9 +40,10 @@ function handleEvent(event) {
   event.stopPropagation();
 }
 
-window.addEventListener('click', handleEvent);
-window.addEventListener('touchstart', handleEvent);
-
+// Use event listeners for both click and touch events
+['click', 'touchstart'].forEach(function(eventType) {
+  window.addEventListener(eventType, handleEvent);
+});
 
 
   // window.onclick = function(event) {
