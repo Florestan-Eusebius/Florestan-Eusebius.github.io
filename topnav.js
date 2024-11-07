@@ -38,8 +38,12 @@ function handleEvent(event) {
       myFunction();
       event.preventDefault(); // Prevent default behavior only for the icon
   } else if (topnav.contains(event.target) && event.target.tagName === 'A') {
-      // If a navigation link is clicked, close the menu
-      topnav.className = "topnav";
+      // Allow the navigation to happen
+      setTimeout(() => {
+          window.location.href = event.target.href;
+          topnav.className = "topnav";
+      }, 100); // Adjust the delay as needed
+      return;
   } else if (!topnav.contains(event.target)) {
       // Clicked outside the navigation menu, close the menu
       topnav.className = "topnav";
