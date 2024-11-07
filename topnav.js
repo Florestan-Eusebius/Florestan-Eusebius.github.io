@@ -30,7 +30,10 @@ function myFunction() {
 }
 
 function handleEvent(event) {
-  if (document.getElementsByClassName('icon')[0].contains(event.target)) {
+  const icon = document.getElementsByClassName('icon')[0];
+  
+  // Check if the event target is the icon or contains the icon
+  if (icon.contains(event.target) || event.target === icon) {
       myFunction();
       event.preventDefault(); // Prevent default behavior only for the icon
   } else {
