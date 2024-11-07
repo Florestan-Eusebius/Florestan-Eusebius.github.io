@@ -31,14 +31,18 @@ function myFunction() {
 
 function handleEvent(event) {
   const icon = document.getElementsByClassName('icon')[0];
-  
+  const topnav = document.getElementById("myTopnav");
+
   // Check if the event target is the icon or contains the icon
   if (icon.contains(event.target) || event.target === icon) {
       myFunction();
       event.preventDefault(); // Prevent default behavior only for the icon
-  } else {
-      var x = document.getElementById("myTopnav");
-      x.className = "topnav";
+  } else if (topnav.contains(event.target) && event.target.tagName === 'A') {
+      // If a navigation link is clicked, close the menu
+      topnav.className = "topnav";
+  } else if (!topnav.contains(event.target)) {
+      // Clicked outside the navigation menu, close the menu
+      topnav.className = "topnav";
   }
   event.stopPropagation();
 }
@@ -47,6 +51,7 @@ function handleEvent(event) {
 ['click', 'touchstart'].forEach(function(eventType) {
   window.addEventListener(eventType, handleEvent);
 });
+
 
 
   // window.onclick = function(event) {
