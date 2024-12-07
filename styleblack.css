@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('title.woff') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
     font-family: 'Noto Sans SC', sans-serif;
     /* background-image: url("bk1.png"), url("bk2.png");
@@ -134,7 +141,7 @@ header {
 }
 
 .h1-container{
-    width: 800px;
+    width: 600px;
     max-width: 80vw;
     /* padding-top: 300px;
     padding-bottom: 200px; */
@@ -143,11 +150,17 @@ header {
     flex-direction: column;
     position: relative;
     z-index: 6;
+    writing-mode: vertical-rl; /* Set text direction to top-to-bottom, right-to-left */
+    direction: rtl;
 }
 
+.en{
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
 
 h1{
-    font-family: "Noto Sans SC", sans-serif;
+    font-family: CustomFont, "Noto Sans SC", sans-serif;
     /* font-size: xx-large; */
     text-align: center;
     font-size: xxx-large;
@@ -156,7 +169,7 @@ h1{
 }
 
 header h2{
-    font-family: "Noto Sans SC", sans-serif;
+    font-family: CustomFont, "Noto Sans SC", sans-serif;
     text-align: center;
 }
 
@@ -307,7 +320,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .h1-container, section {
+    .h1-container {
+      max-width: none;
+        width: 80%;
+    }
+    section {
         max-width: none;
         width: 100%;
     }
